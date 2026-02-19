@@ -1,0 +1,418 @@
+[
+    {
+        "id": 1,
+        "article": "88091753",
+        "title": "Mammut Eigerjoch Pro IN Hooded Jacket, Tarn",
+        "brand": "Mammut",
+        "price": 6790,
+        "images": [
+            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-065.webp",
+            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-165.webp",
+            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-265.webp",
+            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-365.webp"
+        ],
+        "category": "верхняя одежда",
+        "size": "S, M, L, XL",
+        "color": "синий",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 3,
+        "article": "55676275",
+        "title": "Mammut Convey Tour HS Hooded Jacket Men, Marine",
+        "brand": "Mammut",
+        "price": 2990,
+        "images": [
+            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-065.webp",
+            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-165.webp",
+            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-265.webp",
+            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "S, M, L, XL, 2XL",
+        "color": "синий",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 4,
+        "article": "71729183",
+        "title": "Arcteryx ATOM HOODY M, Forage",
+        "brand": "Arcteryx",
+        "price": 4700,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-265.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "S, M, L",
+        "color": "зеленый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 5,
+        "article": "32624956",
+        "title": "Arcteryx THORIUM HOODY, Nightscape",
+        "brand": "Arcteryx",
+        "price": 18000,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-265.webp"
+        ],
+        "category": "верхняя одежда",
+        "size": "S, M, L, 2XL",
+        "color": "синий",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 6,
+        "article": "54202361",
+        "title": "Куртка Arcteryx BETA SL JACKET MENS, Black",
+        "brand": "Arcteryx",
+        "price": 7690,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-265.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "L, XL",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 7,
+        "article": "64192288",
+        "title": "Arcteryx BETA JACKET MENS, Lodestar",
+        "brand": "Arcteryx",
+        "price": 7130,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-265.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "S, M, L",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 8,
+        "article": "62486931",
+        "title": "Куртка Arcteryx BETA JACKET MENS, Black Sapphire",
+        "brand": "Arcteryx",
+        "price": 7130,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-265.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "S, M, L, XL",
+        "color": "синий",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 9,
+        "article": "63868974",
+        "title": "The North Face Aconcagua 3 Hoodie, Black",
+        "brand": "The North Face",
+        "price": 5290,
+        "images": [
+            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-065.webp",
+            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-165.webp",
+            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-265.webp"
+        ],
+        "category": "верхняя одежда",
+        "size": "S, M, L, XL",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 10,
+        "article": "62656772",
+        "title": "Arcteryx BETA JACKET MENS, Trail Magic",
+        "brand": "Arcteryx",
+        "price": 7100,
+        "images": [
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-065.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-165.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-265.webp",
+            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-365.webp"
+        ],
+        "category": "ветровки",
+        "size": "XS, S, M",
+        "color": "белый",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 11,
+        "article": "62347377",
+        "title": "Graff 900-902, Black",
+        "brand": "Graff",
+        "price": 4950,
+        "images": [
+            "\/public\/image\/product\/termobelyo-graff-900-902-black-065.webp",
+            "\/public\/image\/product\/termobelyo-graff-900-902-black-165.webp"
+        ],
+        "category": "термо бельё",
+        "size": "XS, S, M, L, XL, 2XL",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 12,
+        "article": "64481873",
+        "title": "Graff 900-901, Olive",
+        "brand": "Graff",
+        "price": 4590,
+        "images": [
+            "\/public\/image\/product\/termobelyo-graff-900-901-olive-065.webp"
+        ],
+        "category": "термо бельё",
+        "size": "S, M, L, XL, 2XL",
+        "color": "зеленый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 13,
+        "article": "16384317",
+        "title": "Arcteryx COVERT CARDIGAN MEN'S, Black Heather II",
+        "brand": "Arcteryx",
+        "price": 9990,
+        "images": [
+            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-065.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-165.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-265.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-365.webp"
+        ],
+        "category": "флисовая одежда",
+        "size": "XS, S, M, L, XL",
+        "color": "серый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 14,
+        "article": "90345753",
+        "title": "Arcteryx KYANITE LT JACKET MEN'S, Revel",
+        "brand": "Arcteryx",
+        "price": 9950,
+        "images": [
+            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-065.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-165.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-265.webp",
+            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-365.webp"
+        ],
+        "category": "флисовая одежда",
+        "size": "M, L, XL",
+        "color": "желтый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 15,
+        "article": "76113572",
+        "title": "Arcteryx BETA PANT MEN'S 24, Black",
+        "brand": "Arcteryx",
+        "price": 5660,
+        "images": [
+            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-065.webp",
+            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-165.webp",
+            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-265.webp",
+            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-365.webp"
+        ],
+        "category": "штаны",
+        "size": "S, M, L, XL",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 16,
+        "article": "44944752",
+        "title": "Simms Guide Fishing Pants, Camel",
+        "brand": "Simms",
+        "price": 6000,
+        "images": [
+            "\/public\/image\/product\/bryuki-simms-guide-fishing-pants-camel-065.webp"
+        ],
+        "category": "штаны",
+        "size": "S, M",
+        "color": "желтый",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 19,
+        "article": "54056288",
+        "title": "The North Face Logo Box Cuffied, Black",
+        "brand": "The North Face",
+        "price": 2900,
+        "images": [
+            "\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-065.webp",
+            "\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-165.webp"
+        ],
+        "category": "шапка",
+        "size": "XS, S, M, L, XL, 2XL",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 20,
+        "article": "98204875",
+        "title": "Costa Rinconcito Blue Mirror 580G, Tiger Shark",
+        "brand": "Costa",
+        "price": 1900,
+        "images": [
+            "\/public\/image\/product\/ochki-costa-rinconcito-blue-mirror-580g-tiger-shark-065.webp"
+        ],
+        "category": "очки",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 21,
+        "article": "88558813",
+        "title": "Oakley HELIOSTAT MATTE BLACK, PRIZM SAPPHIRE POLAR",
+        "brand": "Oakley",
+        "price": 13000,
+        "images": [
+            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-065.webp",
+            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-165.webp",
+            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-265.webp",
+            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-365.webp"
+        ],
+        "category": "очки",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 22,
+        "article": "74534482",
+        "title": "Oakley HOLBROOK S MATTE BLACK, PRIZM VIOLET",
+        "brand": "Oakley",
+        "price": 15000,
+        "images": [
+            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-065.webp",
+            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-165.webp",
+            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-265.webp",
+            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-365.webp"
+        ],
+        "category": "очки",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 24,
+        "article": "69478201",
+        "title": "Patagonia Better Sweater Beanie, L, Grey",
+        "brand": "Patagonia",
+        "price": 5400,
+        "images": [
+            "\/public\/image\/product\/shapka-patagonia-better-sweater-beanie-l-grey-065.webp"
+        ],
+        "category": "шапка",
+        "size": "N\/A",
+        "color": "серый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 25,
+        "article": "58133664",
+        "title": "Arcteryx BIRD PATCH TOQUE, Komorebi",
+        "brand": "Arcteryx",
+        "price": 5400,
+        "images": [
+            "\/public\/image\/product\/shapka-arcteryx-bird-patch-toque-komorebi-065.webp"
+        ],
+        "category": "шапка",
+        "size": "N\/A",
+        "color": "коричневый",
+        "isNew": false,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 26,
+        "article": "33782328",
+        "title": "Salomon X ULTRA 360 MID GTX, Black-Magnet-Pewter",
+        "brand": "Salomon",
+        "price": 15990,
+        "images": [
+            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-065.webp",
+            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-165.webp",
+            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-265.webp",
+            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-365.webp"
+        ],
+        "category": "обувь",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    },
+    {
+        "id": 27,
+        "article": "82226156",
+        "title": "Arcteryx KOPEC MID GTX MENS, Black-Black",
+        "brand": "Arcteryx",
+        "price": 19900,
+        "images": [
+            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-065.webp",
+            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-165.webp",
+            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-265.webp",
+            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-365.webp"
+        ],
+        "category": "обувь",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "men"
+    }
+]

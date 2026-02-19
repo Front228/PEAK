@@ -1,0 +1,184 @@
+@import url(root.css);
+
+.main_block-register{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+.image_block{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.forgot{
+width: 500px;
+height: 600px !important;
+border: 2px solid black;
+border-radius: 16px;
+}
+.auth-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.block-register{
+    max-width: 500px;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h2_reg {
+    font-size: 2rem;
+    font-family: var(--font-Rubik);
+    font-weight: 600;
+    color: var(--color-black);
+    text-align: center;
+}
+.success {
+    width: 100%;
+    height: 200px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+
+}
+.success a{
+    font-size: 1.2rem;
+    font-family: var(--font-Rubik);
+    color: var(--color-black) !important;
+    text-align: center;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: transparent;
+
+}
+.input-group {
+    position: relative;
+    margin: 16px 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Стиль инпута */
+.input-group input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект при фокусе (поднимающийся label) */
+    .input-group input:focus ~ label,
+    .input-group input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #ff7700;
+}
+
+/* Label (плейсхолдер-эффект) */
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+/* Красная граница и label при ошибке */
+.input-group input.input-error {
+    border-bottom: 2px solid #e74c3c !important;
+}
+.input-group input.input-error ~ label {
+    color: #e74c3c !important;
+}
+
+/* Сообщение об ошибке под полем */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+/* Стиль кнопки */
+.btn-reg {
+    max-width: 300px;
+    width: 100%;
+    padding: 12px;
+    background: #ff7700;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.btn-reg:hover {
+    background: #e06600;
+}
+
+.block-register a{
+    text-align: center;
+    padding: 20px;
+    color: var(--color-gray);
+    text-decoration: none;
+    transition: all 0.2s ease; 
+}
+.block-register a:hover{
+    color: var(--color-black);
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .main_block-register {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image_block {
+        width: 100%;
+        height: 30vh; /* или 200px */
+    }
+    .block-register {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+}
+@media (max-width:640px) {
+    .image_block{
+        display: none !important;
+    }
+    
+}
+

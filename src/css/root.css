@@ -1,0 +1,22 @@
+:root{
+    --color-white:#fffefe;
+    --color-black:#000000;
+    --color-orange:#ff6b35;
+    --btn-hover-effect:#f37d53;
+    --color-gray-shop:#f2f2f2;
+    --font-Rubik:"Rubik", sans-serif;
+    --color-gray:rgb(168, 168, 168);
+    --bg-grid-shop:#fffcf9;
+}
+@font-face { 
+    font-family: "Rubik", sans-serif;
+    src: url(/public/fonts/Rubik/static/Rubik-Regular.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/static/Rubik-SemiBold.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/static/Rubik-Bold.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/static/Rubik-Medium.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/static/Rubik-Light.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/static/Rubik-Italic.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/Rubik-VariableFont_wght.ttf) format("ttf");
+    src: url(/public/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf) format("ttf");
+    
+}

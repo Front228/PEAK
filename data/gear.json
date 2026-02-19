@@ -1,0 +1,284 @@
+[
+    {
+        "id": 1,
+        "article": "98256188",
+        "title": "Arcteryx BORA 65, Tatsu",
+        "brand": "Arcteryx",
+        "price": 25000,
+        "images": [
+            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-065.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-165.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp"
+        ],
+        "category": "рюкзак",
+        "size": "N\/A",
+        "color": "зеленый",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 2,
+        "article": "20712832",
+        "title": "Arcteryx RUSH SK 42, Black",
+        "brand": "Arcteryx",
+        "price": 15990,
+        "images": [
+            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-065.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-165.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-265.webp",
+            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-365.webp"
+        ],
+        "category": "рюкзак",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 3,
+        "article": "95497007",
+        "title": "Therm-a-Rest QUESTAR 0F (-18C), Regular, Balsam",
+        "brand": "Therm-a-Rest",
+        "price": 18990,
+        "images": [
+            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-065.webp",
+            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-165.webp"
+        ],
+        "category": "Спальные мешки",
+        "size": "N\/A",
+        "color": "серый",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 4,
+        "article": "42640949",
+        "title": "Therm-a-Rest QUESTAR 32F (0C), Regular, Balsam",
+        "brand": "Therm-a-Rest",
+        "price": 15990,
+        "images": [
+            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-065.webp",
+            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-165.webp"
+        ],
+        "category": "Спальные мешки",
+        "size": "N\/A",
+        "color": "серый",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 5,
+        "article": "10479795",
+        "title": "Горные лыжи FISCHER The Curv DTI AR + RS 11 GW PR (P08424)",
+        "brand": "fischer",
+        "price": 79999,
+        "images": [
+            "\/public\/image\/product\/1750cfdd_3ea4_11ef_a815_002590ad6739_15e59c6a_a0f8_11ef_aaaa_002590ad6739.jpg"
+        ],
+        "category": "лыжи",
+        "size": "N\/A",
+        "color": "синий",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 6,
+        "article": "28324252",
+        "title": "Горные лыжи HEAD Supershape e-Original + PRD 12 GW (31339503)",
+        "brand": "HEAD",
+        "price": 84599,
+        "images": [
+            "\/public\/image\/product\/48297219_4d03_11f0_a2f0_002590ad6739_baf9b0d8_4d03_11f0_a2f0_002590ad6739.jpg"
+        ],
+        "category": "лыжи",
+        "size": "N\/A",
+        "color": "белый",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 7,
+        "article": "40799777",
+        "title": "Горные лыжи HEAD Supershape Team Easy JRS + JRS 7.5 GW (31450502)",
+        "brand": "HEAD",
+        "price": 21000,
+        "images": [
+            "\/public\/image\/product\/7267f8ce_5029_11f0_ad5b_002590ad6739_7c083af1_502a_11f0_ad5b_002590ad6739.jpg"
+        ],
+        "category": "лыжи",
+        "size": "N\/A",
+        "color": "белый",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 8,
+        "article": "82874556",
+        "title": "Сноуборд NIDECKER Sensor 25\/26",
+        "brand": "Nidecker",
+        "price": 54000,
+        "images": [
+            "\/public\/image\/product\/img11199_10964.jpg",
+            "\/public\/image\/product\/img11199_70513.jpg",
+            "\/public\/image\/product\/img11199_93906.jpg"
+        ],
+        "category": "сноуборд",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 9,
+        "article": "52056096",
+        "title": "Сноуборд Jones Flagship 2025-26",
+        "brand": "Jones",
+        "price": 74000,
+        "images": [
+            "\/public\/image\/product\/img10471_14826.jpg",
+            "\/public\/image\/product\/img10471_40955.jpg",
+            "\/public\/image\/product\/img10471_85013.jpg"
+        ],
+        "category": "сноуборд",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 10,
+        "article": "93705825",
+        "title": "Зимний Шлем Alpina Gems black matt",
+        "brand": "Alpina",
+        "price": 9990,
+        "images": [
+            "\/public\/image\/product\/img8154_11319.jpg",
+            "\/public\/image\/product\/img8154_34599.jpg",
+            "\/public\/image\/product\/img8154_62663.jpg",
+            "\/public\/image\/product\/img8154_95383.jpg"
+        ],
+        "category": "шлема",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 11,
+        "article": "74073472",
+        "title": "Шлем PRIME Fun-F1 black юношеский\/взрослый",
+        "brand": "Prime",
+        "price": 1590,
+        "images": [
+            "\/public\/image\/product\/img7447_46825.png",
+            "\/public\/image\/product\/img7447_25862.png"
+        ],
+        "category": "шлема",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 12,
+        "article": "34176208",
+        "title": "Шлем с визором ProSurf Ice Visor Photochromic White",
+        "brand": "ProSurf",
+        "price": 15990,
+        "images": [
+            "\/public\/image\/product\/img10578_12404.jpg",
+            "\/public\/image\/product\/img10578_42711.jpg",
+            "\/public\/image\/product\/img10578_70855.jpg"
+        ],
+        "category": "шлема",
+        "size": "N\/A",
+        "color": "белый",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 13,
+        "article": "68726138",
+        "title": "Коврик туристический складной Гармошка, камуфляж коричневый",
+        "brand": "Россия",
+        "price": 1200,
+        "images": [
+            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-065.webp",
+            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-165.webp",
+            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-265.webp"
+        ],
+        "category": "Туристические коврики",
+        "size": "N\/A",
+        "color": "камуфляж",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 14,
+        "article": "13631590",
+        "title": "Горнолыжный шлем Salomon Pioneer LT Cherry Tomatoe",
+        "brand": "Salomon",
+        "price": 12000,
+        "images": [
+            "\/public\/image\/product\/img10882_14515.png",
+            "\/public\/image\/product\/img10882_54334.png",
+            "\/public\/image\/product\/img10882_74886.png",
+            "\/public\/image\/product\/img10882_79439.jpg"
+        ],
+        "category": "шлема",
+        "size": "N\/A",
+        "color": "оранжевая",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 15,
+        "article": "34172506",
+        "title": "Маска горнолыжная ALPINA Falera Mag Q-Lite Black Matt\/Q-Lite Red S2\/Pink S1",
+        "brand": "Alpina",
+        "price": 9000,
+        "images": [
+            "\/public\/image\/product\/img11256_48848.jpg",
+            "\/public\/image\/product\/img11256_51812.jpg",
+            "\/public\/image\/product\/img11256_72446.jpg"
+        ],
+        "category": "маски",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "gear"
+    },
+    {
+        "id": 16,
+        "article": "84732033",
+        "title": "Маска горнолыжная SCOTT Shield+Extra Lens Mineral Black \/AMP Black Chrome S3",
+        "brand": "Scott",
+        "price": 12000,
+        "images": [
+            "\/public\/image\/product\/img11413_43414.jpg",
+            "\/public\/image\/product\/img11413_57754.jpg"
+        ],
+        "category": "маски",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0,
+        "section": "gear"
+    }
+]

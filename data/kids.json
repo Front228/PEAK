@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,
+        "article": "92280061",
+        "title": "Куртка горнолыжная утепленная",
+        "brand": "Finntrail",
+        "price": 5000,
+        "images": [
+            "\/public\/image\/product\/6930309a-00b4-40f2-ba7a-47e5e13ac9c0.1164x1746.avif",
+            "\/public\/image\/product\/6930309a-1dc4-47a1-8242-efa5cd71f532.1164x1746.avif",
+            "\/public\/image\/product\/6930309a-3812-47e4-8bcb-7c9d6e149cf7.1164x1746.avif",
+            "\/public\/image\/product\/69303099-f37d-46b2-b8f8-8151889ea0d9.1164x1746.avif"
+        ],
+        "category": "верхняя одежда",
+        "size": "XS, S, M",
+        "color": "красный",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 2,
+        "title": "Подростковые брюки 8848 Altitude «ESTER»",
+        "brand": "Altitude",
+        "price": 5000,
+        "images": [
+            "\/public\/image\/product\/8736_Ester_Softhshell_Pant_Fuchsia_P_0.jpg",
+            "\/public\/image\/product\/8848-altitude_Touringjacka_8736_fuchsia_back_large.jpg",
+            "\/public\/image\/product\/8848-altitude_Touringjacka_8736_fuchsia_front_large.jpg"
+        ],
+        "category": "штаны",
+        "size": "",
+        "color": "красный",
+        "isNew": false,
+        "discount": 0
+    },
+    {
+        "id": 3,
+        "title": "Детская куртка 8848 Altitude «2 TONE»",
+        "brand": "Altitude",
+        "price": 5000,
+        "images": [
+            "\/public\/image\/product\/8742_2Tone_Jacket_Guacamole_P.jpg"
+        ],
+        "category": "верхняя одежда",
+        "size": "",
+        "color": "черный",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 4,
+        "article": "78352525",
+        "title": "Детская куртка 8848 Altitude «2 TONE»",
+        "brand": "Altitude",
+        "price": 4990,
+        "images": [
+            "\/public\/image\/product\/8742_2Tone_Jacket_Mustard_P.jpg"
+        ],
+        "category": "верхняя одежда",
+        "size": "S, M, L, XL",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 5,
+        "article": "78262522",
+        "title": "Детские брюки 8848 Altitude «TRACK-17»",
+        "brand": "Altitude",
+        "price": 5900,
+        "images": [
+            "\/public\/image\/product\/8744_Track_17_pant_Red_P_0.jpg"
+        ],
+        "category": "штаны",
+        "size": "S, M, L",
+        "color": "красный",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 6,
+        "article": "69045170",
+        "title": "Детские брюки 8848 Altitude «TRACK-17»",
+        "brand": "Altitude",
+        "price": 5900,
+        "images": [
+            "\/public\/image\/product\/8744_Track_17_pant_Navy_P.jpg"
+        ],
+        "category": "штаны",
+        "size": "XS, S, M, L",
+        "color": "синий",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 7,
+        "article": "86435023",
+        "title": "Детские брюки 8848 Altitude «TRACK-17»",
+        "brand": "Altitude",
+        "price": 4900,
+        "images": [
+            "\/public\/image\/product\/8744_Track_17_pant_Black_P.jpg"
+        ],
+        "category": "штаны",
+        "size": "S, M, L",
+        "color": "черный",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 8,
+        "article": "11736309",
+        "title": "Толстовка 8848 ALTITUDE “EXPRESS PILE”",
+        "brand": "Altitude",
+        "price": 2600,
+        "images": [
+            "\/public\/image\/product\/8456_express_jr_pile_74_marine_0.jpg"
+        ],
+        "category": "верхняя одежда",
+        "size": "XS, S, M, L",
+        "color": "синий",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    },
+    {
+        "id": 9,
+        "article": "14474051",
+        "title": "Толстовка 8848 ALTITUDE “EXPRESS PILE”",
+        "brand": "Altitude",
+        "price": 2600,
+        "images": [
+            "\/public\/image\/product\/8456_express_jr_pile_76_purple.jpg"
+        ],
+        "category": "верхняя одежда",
+        "size": "XS, S, M, L",
+        "color": "фиолетовый",
+        "isNew": false,
+        "discount": 0,
+        "section": "kids"
+    }
+]

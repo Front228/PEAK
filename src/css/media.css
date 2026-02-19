@@ -1,0 +1,276 @@
+@media (max-width:1660px) {
+        .section_product-card {
+        min-height: 2000px;
+    }
+    
+}
+@media(max-width:1440px){
+    .section_product-card{
+        min-height: 2000px;
+    }
+}
+@media (max-width:1260px){
+    .section_product-card{
+        min-height:2550px;
+    }
+}
+@media (max-width:1220px) {
+    .navbar{
+        display: none;
+    }
+    .main-header{
+        margin-top: 40px;
+    }
+    .haeder_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .register{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .mobile-register{
+        position: absolute;
+        top: 10px;
+        right: 100px;
+    }
+    .mobile-register a{
+        text-decoration: none;
+    }
+
+
+    .block-title{
+        top: 50%;
+    }
+    .title-text{
+        font-size: 3rem;
+    }
+    .description-text{
+        font-size: 1.6rem;
+
+    }
+    .btn-infoMore{
+        font-size: 1.25rem;
+        padding: 15px 30px;
+    }
+
+    .Title-brends{
+        padding-left: 60px;
+    }
+    .parent {
+    /* Новая сетка: 2 колонки, 3 строки */
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px auto; /* последние 200px — для .div5 */
+    grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div5";
+    height: 100vh;
+    grid-gap: 10px; 
+    }
+
+    .block_grid-section {
+        max-height: none;
+        height: 1450px; 
+    }
+
+    .div1 { grid-area: div1; }
+    .div2 { grid-area: div2; }
+    .div3 { grid-area: div3; }
+    .div4 { grid-area: div4; }
+    .div5 { grid-area: div5;  height: 600px; }
+
+    .section_product-card{
+        min-height: 2550px;
+    }
+}
+@media screen and (max-width:860px) {
+    .product-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 400px;
+    }
+}
+@media(max-width:797px){
+    .title-text{
+        font-size: 2.5rem;
+    }
+    .description-text{
+        font-size: 1.4rem;
+        padding-bottom: 25px;
+    }
+    .btn-infoMore{
+        font-size: 1.25rem;
+        padding: 15px 30px;
+    }
+
+    .Title-brends{
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .padding-title{padding: 40px 0;}
+    .parent {
+    /* Новая сетка: 2 колонки, 3 строки */
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px auto; /* последние 200px — для .div5 */
+    grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div5";
+    height: 100vh;
+    grid-gap: 5px; /* заменяет column-gap и row-gap */
+    }
+
+    .block_grid-section{
+        height: 1250px;}
+
+    .div1 { grid-area: div1; }
+    .div2 { grid-area: div2; }
+    .div3 { grid-area: div3; }
+    .div4 { grid-area: div4; }
+    .div5 { grid-area: div5; height: 600px; }
+
+    .section_product-card{
+        min-height: 2500px;
+    }
+    .block_footer{
+        height: 400px;
+    }
+    .logo-network{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+}
+
+@media (max-width:620px) {
+    .description-text{
+        text-align: start;
+        padding-left: 20px;
+    }
+    .btn-infoMore{
+        width: 100%;
+        min-width: auto;
+        text-align: center;
+
+    }
+    .btn-infoMore:last-child{
+        margin-top: 10px;
+        margin-left:0;
+
+    }
+    .parent {
+    /* Новая сетка: 2 колонки, 3 строки */
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px auto; /* последние 200px — для .div5 */
+    grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div5";
+    height: 100vh;
+    grid-gap: 5px; /* заменяет column-gap и row-gap */
+    }
+    .block_grid-section{
+        height: 850px;}
+
+    .div1 { grid-area: div1; }
+    .div2 { grid-area: div2; }
+    .div3 { grid-area: div3; }
+    .div4 { grid-area: div4; }
+    .div5 { grid-area: div5; height: 400px; }
+    .title-wear{
+        font-size: 15px;
+    }
+
+    .block_footer{
+        height: 500px;
+    }
+    .product-title {
+        height: 70px;
+    }
+}
+@media (max-width:540px){
+    .section_product-card {
+        min-height: 2200px;
+    }
+}
+@media (max-width:480px){
+    .section_product-card {
+        min-height: 4800px;
+    }
+}
+@media(max-width:434px){
+    .block-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .description-text{
+        font-size: 1rem;
+        text-align: start;
+        padding-left: 20px;
+    }
+    .btn-infoMore{
+        font-size: 1rem;
+    }
+    .title-wear{
+        font-size: 15px;
+    }
+    .nav_logo{
+        margin-left: 5px;
+    }
+    .burger_menu{
+        right: 0px;
+    }
+    .mobile-register{
+        right: 60px;
+    }
+}
+@media(max-width:376px){
+    .title-text{
+        font-size: 1.8rem;
+    }
+    .btn-infoMore{
+        font-size: 14px;
+    }
+    .parent {
+    /* Новая сетка: 2 колонки, 3 строки */
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 170px 170px auto; /* последние 200px — для .div5 */
+    grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div5";
+    height: 100vh;
+    grid-gap: 5px; /* заменяет column-gap и row-gap */
+    }
+    .block_grid-section{
+        height: 700px;}
+
+    .div1 { grid-area: div1; }
+    .div2 { grid-area: div2; }
+    .div3 { grid-area: div3; }
+    .div4 { grid-area: div4; }
+    .div5 { grid-area: div5; height: 300px; }
+    .title-wear{
+        font-size: 14px;
+    }
+}
+@media (max-width:345px){
+     .section_product-card {
+        min-height: 4600px;
+    }
+}
+
+
+
