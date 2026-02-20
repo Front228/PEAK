@@ -28,11 +28,11 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PEAK Perfomance</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/icon32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/icon16x16.png">
-        <link rel="stylesheet" href="/src/css/style.css">
-        <link rel="stylesheet" href="/src/css/media.css">
-        <link rel="stylesheet" href="/src/css/pageCatalog.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../public/icon/icon32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../public/icon/icon16x16.png">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <link rel="stylesheet" href="../src/css/media.css">
+        <link rel="stylesheet" href="../src/css/pageCatalog.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
@@ -61,67 +61,67 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <li class="navbar_item"><a href="/block/men.php">акции</a></li>
-                    <li class="navbar_item"><a href="/block/women.php">женское</a></li>
-                    <li class="navbar_item"><a href="/block/men.php">мужское</a></li>
-                    <li class="navbar_item"><a href="/block/kids.php">детское</a></li>
-                    <li class="navbar_item"><a href="/block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_item"><a href="men.php">акции</a></li>
+                    <li class="navbar_item"><a href="women.php">женское</a></li>
+                    <li class="navbar_item"><a href="men.php">мужское</a></li>
+                    <li class="navbar_item"><a href="kids.php">детское</a></li>
+                    <li class="navbar_item"><a href="equipment.php">аксессуары</a></li>
                     
                 </ul>
                 </nav>
                 <div class="register">
-                    <a href="/src/php/favorites.php" class="icon-wrapper">
-                        <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
+                    <a href="src/php/favorites.php" class="icon-wrapper">
+                        <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                         <span class="badge" id="favorites-count"></span>
                     </a>
-                    <a href="/src/php/cart.php" class="icon-wrapper">
-                        <img src="/public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
+                    <a href="src/php/cart.php" class="icon-wrapper">
+                        <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                         <span class="badge" id="cart-count"></span>
                     </a>
                     <?php if (isset($_SESSION['user_id'])): ?>
-                        <a href="/src/php/auth/logout.php" >
+                        <a href="src/php/auth/logout.php" >
                         <img src="/public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                         </a>
                     <?php else: ?>
-                        <a href="/src/php/auth/login.php" >
-                        <img src="/public/icon/profile.svg" alt="Вход" class="sign_image"></a>
+                        <a href="src/php/auth/login.php" >
+                        <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                         </a>
                     <?php endif; ?>
                 </div>
                 <div class="mobile">
                     <div class="mobile-register">
-                        <a href="/src/php/favorites.php" class="icon-wrapper">
-                            <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
+                        <a href="src/php/favorites.php" class="icon-wrapper">
+                            <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                             <span class="badge" id="favorites-count"></span>
                         </a>
-                        <a href="/src/php/cart.php" class="icon-wrapper">
-                            <img src="/public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
+                        <a href="src/php/cart.php" class="icon-wrapper">
+                            <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                             <span class="badge" id="cart-count"></span>
                         </a>
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <a href="src/php/auth/logout.php" >
-                            <img src="/public/icon/exit_profile.svg" alt="Выход" class="logout_image">
+                            <img src="../public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                             </a>
                         <?php else: ?>
                             <a href="src/php/auth/login.php" >
-                            <img src="/public/icon/profile.svg" alt="Вход" class="sign_image"></a>
+                            <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                             </a>
                         <?php endif; ?>
                     </div>
                 <div class="burger_menu">
-                    <img src="/public/icon/buger-menu.png" alt="menu" width="50" height="50">
+                    <img src="../public/icon/buger-menu.png" alt="menu" width="50" height="50">
                 </div>
                 <nav class="nav_mobile">
-                    <div class="closeMenu"><img src="/public/icon/closeMenu.png" alt="close" class="close-menu"></div>
+                    <div class="closeMenu"><img src="../public/icon/closeMenu.png" alt="close" class="close-menu"></div>
                     <div class="mobileLogo">
-                    <a href="index.html"><img src="/public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
+                    <a href="index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
-                    <li class="navbar_mobile-item"><a href="/block/men.php">акции</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/women.php">женское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/men.php">мужское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/kids.php">детское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_mobile-item"><a href="men.php">акции</a></li>
+                    <li class="navbar_mobile-item"><a href="women.php">женское</a></li>
+                    <li class="navbar_mobile-item"><a href="men.php">мужское</a></li>
+                    <li class="navbar_mobile-item"><a href="kids.php">детское</a></li>
+                    <li class="navbar_mobile-item"><a href="equipment.php">аксессуары</a></li>
                     
                     </ul>
                 </nav>
@@ -256,11 +256,11 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
         <nav class="footer_nav">
             <ul class="footer_list">
             <li class="footer_item catalog">Каталог</li>
-            <li class="footer_item"><a href="">акция</a></li>
-            <li class="footer_item"><a href="">женское</a></li>
-            <li class="footer_item"><a href="">мужское</a></li>
-            <li class="footer_item"><a href="">детское</a></li>
-            <li class="footer_item"><a href="">Снаряжение</a></li>
+            <li class="footer_item"><a href="men.php">акция</a></li>
+            <li class="footer_item"><a href="women.php">женское</a></li>
+            <li class="footer_item"><a href="men.php">мужское</a></li>
+            <li class="footer_item"><a href="kids.php">детское</a></li>
+            <li class="footer_item"><a href="equipment.php">Снаряжение</a></li>
             </ul>
             <ul class="footer_list">
             <li class="footer_item catalog">Правила</li>

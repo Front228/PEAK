@@ -7,8 +7,8 @@
     <title>Корзина</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/icon32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/icon16x16.png">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../media.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
@@ -232,8 +232,8 @@
 
         if (isLogged) {
             Promise.all([
-                fetch('/src/php/handlers/get_cart_count.php').then(res => res.json()),
-                fetch('/src/php/handlers/get_favorites_count.php').then(res => res.json())
+                fetch('src/php/handlers/get_cart_count.php').then(res => res.json()),
+                fetch('src/php/handlers/get_favorites_count.php').then(res => res.json())
             ]).then(([cartData, favData]) => {
                 if (cartData.count > 0) {
                     cartEl.textContent = cartData.count;
@@ -341,7 +341,7 @@
         const container = document.getElementById('cart-items');
 
         if (isUserLoggedIn()) {
-            fetch('/src/php/handlers/get_cart.php')
+            fetch('src/php/handlers/get_cart.php')
                 .then(res => res.json())
                 .then(renderCart);
         } else {
@@ -422,7 +422,7 @@
     // Удаление из корзины
     function removeFromCart(id, section) {
         if (isUserLoggedIn()) {
-            fetch('/src/php/handlers/remove_from_cart.php', {
+            fetch('src/php/handlers/remove_from_cart.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `product_id=${id}&section=${encodeURIComponent(section)}`
