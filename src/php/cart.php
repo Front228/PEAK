@@ -7,8 +7,8 @@
     <title>Корзина</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/icon32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/icon16x16.png">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/media.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
