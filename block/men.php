@@ -73,52 +73,52 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                 </ul>
                 </nav>
                 <div class="register">
-                    <a href="/src/php/favorites.php" class="icon-wrapper">
-                        <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
+                    <a href="../src/php/favorites.php" class="icon-wrapper">
+                        <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                         <span class="badge" id="favorites-count"></span>
                     </a>
-                    <a href="/src/php/cart.php" class="icon-wrapper">
-                        <img src="/public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
+                    <a href="../src/php/cart.php" class="icon-wrapper">
+                        <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                         <span class="badge" id="cart-count"></span>
                     </a>
                     <?php if (isset($_SESSION['user_id'])): ?>
-                        <a href="/src/php/auth/logout.php" >
-                        <img src="/public/icon/exit_profile.svg" alt="Выход" class="logout_image">
+                        <a href="../src/php/auth/logout.php" >
+                        <img src="../public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                         </a>
                     <?php else: ?>
-                        <a href="/src/php/auth/login.php" >
-                        <img src="/public/icon/profile.svg" alt="Вход" class="sign_image"></a>
+                        <a href="../src/php/auth/login.php" >
+                        <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                         </a>
                     <?php endif; ?>
                 </div>
                 <div class="mobile">
                     <div class="mobile-register">
-                        <a href="/src/php/favorites.php"  class="icon-wrapper">
-                            <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
+                        <a href="../src/php/favorites.php"  class="icon-wrapper">
+                            <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                             <span class="badge favorites-count-mobile" ></span>
                         </a>
-                        <a href="/src/php/cart.php" class="icon-wrapper">
-                            <img src="/public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
+                        <a href="../src/php/cart.php" class="icon-wrapper">
+                            <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                             <span class="badge cart-count-mobile"></span>
                         </a>
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <a href="src/php/auth/logout.php" >
-                            <img src="/public/icon/exit_profile.svg" alt="Выход" class="logout_image">
+                            <a href="../src/php/auth/logout.php" >
+                            <img src="../public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                             </a>
                         <?php else: ?>
-                            <a href="src/php/auth/login.php" >
-                            <img src="/public/icon/profile.svg" alt="Вход" class="sign_image"></a>
+                            <a href="../src/php/auth/login.php" >
+                            <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                             </a>
                         <?php endif; ?>
                     </div>
                 <div class="burger_menu">
-                    <img src="/public/icon/buger-menu.png" alt="menu" width="50" height="50">
+                    <img src="../public/icon/buger-menu.png" alt="menu" width="50" height="50">
                 </div>
                 <nav class="nav_mobile">
                     
-                    <div class="closeMenu"><img src="/public/icon/closeMenu.png" alt="close" class="close-menu"></div>
+                    <div class="closeMenu"><img src="../public/icon/closeMenu.png" alt="close" class="close-menu"></div>
                     <div class="mobileLogo">
-                    <a href="index.html"><img src="/public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
+                    <a href="index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
                     <li class="navbar_mobile-item"><a href="/block/men.php">акции</a></li>
