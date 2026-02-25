@@ -86,41 +86,50 @@ $availableSizes = array_map('trim', explode(',', $product['size']));
                     <li class="navbar_item"><a href="/block/equipment.php">аксессуары</a></li>                    
                 </ul>
                 </nav>
+                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                    <nav class="navbar admin-panel">
+                        <ul class="navbar_list">
+                        <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
+                        </ul>
+                    </nav>
+                <?php endif; ?>
                 <div class="register">
-                    <a href="src/php/favorites.php" class="icon-wrapper">
+                    <a href="../src/php/favorites.php" class="icon-wrapper">
                         <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                         <span class="badge" id="favorites-count"></span>
                     </a>
-                    <a href="src/php/cart.php" class="icon-wrapper">
+                    <a href="../src/php/cart.php" class="icon-wrapper">
                         <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                         <span class="badge" id="cart-count"></span>
                     </a>
                     <?php if (isset($_SESSION['user_id'])): ?>
-                        <a href="src/php/auth/logout.php" >
+                        <a href="../src/php/auth/logout.php" >
                         <img src="../public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                         </a>
                     <?php else: ?>
-                        <a href="src/php/auth/login.php" >
+                        <a href="../src/php/auth/login.php" >
                         <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                         </a>
                     <?php endif; ?>
                 </div>
                 <div class="mobile">
                     <div class="mobile-register">
-                        <a href="src/php/favorites.php">
+                        <a href="../src/php/favorites.php">
                             <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
                             <span class="badge" id="favorites-count"></span>
                         </a>
-                        <a href="src/php/cart.php">
+                        <a href="../src/php/cart.php">
                             <img src="../public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                             <span class="badge" id="cart-count"></span>
                         </a>
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <a href="src/php/auth/logout.php" >
+                            <a href="../src/php/auth/logout.php" >
                             <img src="../public/icon/exit_profile.svg" alt="Выход" class="logout_image">
                             </a>
                         <?php else: ?>
-                            <a href="src/php/auth/login.php" >
+                            <a href="../src/php/auth/login.php" >
                             <img src="../public/icon/profile.svg" alt="Вход" class="sign_image"></a>
                             </a>
                         <?php endif; ?>
@@ -141,6 +150,11 @@ $availableSizes = array_map('trim', explode(',', $product['size']));
                     <li class="navbar_mobile-item"><a href="/block/kids.php">детское</a></li>
                     <li class="navbar_mobile-item"><a href="/block/equipment.php">аксессуары</a></li>
                     
+                    <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                        <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/orders.php">Трекер заказов</a></li>
+                    <?php endif; ?>
                     </ul>
                 </nav>
                 </div>

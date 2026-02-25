@@ -72,6 +72,15 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     
                 </ul>
                 </nav>
+                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                    <nav class="navbar admin-panel">
+                        <ul class="navbar_list">
+                        <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
+                        </ul>
+                    </nav>
+                <?php endif; ?>
                 <div class="register">
                     <a href="../src/php/favorites.php" class="icon-wrapper">
                         <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
@@ -126,6 +135,11 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     <li class="navbar_mobile-item"><a href="kids.php">детское</a></li>
                     <li class="navbar_mobile-item"><a href="equipment.php">аксессуары</a></li>
                     
+                    <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                        <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/orders.php">Трекер заказов</a></li>
+                    <?php endif; ?>
                     </ul>
                 </nav>
                 </div>

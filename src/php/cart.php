@@ -44,6 +44,15 @@
                     <li class="navbar_item"><a href="../../block/equipment.php">аксессуары</a></li>
                 </ul>
                 </nav>
+                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                    <nav class="navbar admin-panel">
+                        <ul class="navbar_list">
+                        <li class="navbar_item"><a href="../../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../../admin/orders.php">Трекер заказов</a></li>
+                        </ul>
+                    </nav>
+                <?php endif; ?>
                 <div class="register">
                     <a href="favorites.php" class="icon-wrapper">
                         <img src="../../public/icon/favourite.svg" alt="Избраное" class="favicon">
@@ -98,6 +107,11 @@
                     <li class="navbar_mobile-item"><a href="../../block/kids.php">детское</a></li>
                     <li class="navbar_mobile-item"><a href="../../block/equipment.php">аксессуары</a></li>
                     
+                    <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                        <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_mobile-item"><a href="admin/orders.php">Трекер заказов</a></li>
+                    <?php endif; ?>
                     </ul>
                 </nav>
                 </div>
@@ -232,8 +246,8 @@
 
         if (isLogged) {
             Promise.all([
-                fetch('src/php/handlers/get_cart_count.php').then(res => res.json()),
-                fetch('src/php/handlers/get_favorites_count.php').then(res => res.json())
+                fetch('/src/php/handlers/get_cart_count.php').then(res => res.json()),
+                fetch('/src/php/handlers/get_favorites_count.php').then(res => res.json())
             ]).then(([cartData, favData]) => {
                 if (cartData.count > 0) {
                     cartEl.textContent = cartData.count;
@@ -341,7 +355,7 @@
         const container = document.getElementById('cart-items');
 
         if (isUserLoggedIn()) {
-            fetch('src/php/handlers/get_cart.php')
+            fetch('/src/php/handlers/get_cart.php')
                 .then(res => res.json())
                 .then(renderCart);
         } else {
@@ -422,7 +436,7 @@
     // Удаление из корзины
     function removeFromCart(id, section) {
         if (isUserLoggedIn()) {
-            fetch('src/php/handlers/remove_from_cart.php', {
+            fetch('/src/php/handlers/remove_from_cart.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `product_id=${id}&section=${encodeURIComponent(section)}`

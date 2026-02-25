@@ -32,7 +32,8 @@
         "size": "",
         "color": "красный",
         "isNew": false,
-        "discount": 0
+        "discount": 0,
+        "section": "kids"
     },
     {
         "id": 3,
@@ -46,7 +47,8 @@
         "size": "",
         "color": "черный",
         "isNew": true,
-        "discount": 0
+        "discount": 0,
+        "section": "kids"
     },
     {
         "id": 4,
