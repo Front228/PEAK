@@ -4,7 +4,7 @@ require_once '../includes/config.php'; // или путь к твоему config
 
 // Защита админки
 if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'admin') {
-    header('Location: login.php');
+    header('Location: ../src/php/auth/login.php');
     exit;
 }
 
