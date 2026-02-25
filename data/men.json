@@ -414,5 +414,22 @@
         "isNew": true,
         "discount": 0,
         "section": "men"
+    },
+    {
+        "id": 28,
+        "article": "84833414",
+        "title": "Arcteryx SINSOLO HAT, Black",
+        "brand": "Arcteryx",
+        "price": 7100,
+        "images": [
+            "\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-065.webp",
+            "\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-165.webp"
+        ],
+        "category": "шапка",
+        "size": "N\/A",
+        "color": "черный",
+        "isNew": false,
+        "discount": 5,
+        "section": "men"
     }
 ]
