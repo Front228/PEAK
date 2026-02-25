@@ -82,10 +82,13 @@ function updateBadges(cartCount, favCount) {
         }
     }
 }
-    // === ФУНКЦИЯ: ДОБАВИТЬ В КОРЗИНУ ===
-function handleAddToCart(item, selectedSize) {
+// === ФУНКЦИЯ: ДОБАВИТЬ В КОРЗИНУ ===
+function handleAddToCart(item, selectedSize, buyBtn) {
     // Если размер не передан — берём первый
     const sizeToUse = selectedSize || (item.size.split(',')[0] || 'N/A');
+
+    // Сохраняем оригинальный текст кнопки
+    const originalText = buyBtn ? buyBtn.textContent : 'Купить';
 
     if (isUserLoggedIn()) {
         fetch('/src/php/handlers/add_to_cart.php', {
@@ -100,14 +103,27 @@ function handleAddToCart(item, selectedSize) {
                 const count = parseInt(el.textContent) || 0;
                 el.textContent = count + 1;
                 el.classList.add('show');
-                showFeedback('В корзине!', 'success');
+
+                // Визуальная обратная связь
+                if (buyBtn) {
+                    buyBtn.textContent = 'В корзине';
+                    buyBtn.style.background = '#4caf50';
+                    setTimeout(() => {
+                        buyBtn.textContent = originalText;
+                        buyBtn.style.background = '';
+                    }, 2000);
+                }
             } else {
-                showFeedback(data.error || 'Ошибка', 'error');
+                if (buyBtn) {
+                    buyBtn.textContent = 'Ошибка';
+                    setTimeout(() => {
+                        buyBtn.textContent = originalText;
+                    }, 2000);
+                }
             }
         });
     } else {
         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        // Ищем товар с тем же размером
         const existing = cart.find(p => 
             p.id === item.id && 
             p.section === item.section && 
@@ -120,60 +136,90 @@ function handleAddToCart(item, selectedSize) {
         }
         localStorage.setItem('cart', JSON.stringify(cart));
         updateHeaderCounters();
-        showFeedback('В корзине!', 'success');
+
+        // Визуальная обратная связь
+        if (buyBtn) {
+            buyBtn.textContent = 'В корзине';
+            buyBtn.style.background = '#4caf50';
+            setTimeout(() => {
+                buyBtn.textContent = originalText;
+                buyBtn.style.background = '';
+            }, 2000);
+        }
     }
 }
 
-    // === ФУНКЦИЯ: ДОБАВИТЬ В ИЗБРАННОЕ ===
-    function handleAddToFavorites(item, btn) {
-        if (isUserLoggedIn()) {
-            fetch('/src/php/handlers/add_to_favorites.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: `product_id=${item.id}&section=${encodeURIComponent(item.section)}`
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    markAsFavorite(btn, true);
-                    const el = document.getElementById('favorites-count');
-                    const count = parseInt(el.textContent) || 0;
-                    el.textContent = count + 1;
-                    el.classList.add('show');
-                } else {
-                    markAsFavorite(btn, false);
-                    console.error(data.error);
-                }
-            });
-        } else {
-            let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-            const isFavorite = favorites.some(p => p.id === item.id && p.section === item.section);
+// === ФУНКЦИЯ: ДОБАВИТЬ В ИЗБРАННОЕ ===
+function handleAddToFavorites(item, btn) {
+    // Проверяем текущее состояние по цвету иконки
+    const isCurrentlyFavorite = btn.querySelector('svg').getAttribute('fill') === '#ff6b35';
 
-            if (isFavorite) {
-                favorites = favorites.filter(p => !(p.id === item.id && p.section === item.section));
-                markAsFavorite(btn, false);
-            } else {
-                favorites.push(item);
+    // Если уже в избранном — ничего не делаем
+    if (isCurrentlyFavorite) {
+        return;
+    }
+
+    if (isUserLoggedIn()) {
+        fetch('/src/php/handlers/add_to_favorites.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `product_id=${item.id}&section=${encodeURIComponent(item.section)}`
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
                 markAsFavorite(btn, true);
+                const el = document.getElementById('favorites-count');
+                const count = parseInt(el.textContent) || 0;
+                el.textContent = count + 1;
+                el.classList.add('show');
+            } else {
+                // При ошибке — сбрасываем состояние
+                markAsFavorite(btn, false);
+                console.error(data.error);
             }
-            localStorage.setItem('favorites', JSON.stringify(favorites));
-            updateHeaderCounters();
-        }
-    }
+        });
+    } else {
+        let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        const isFavorite = favorites.some(p => p.id === item.id && p.section === item.section);
 
-    // === ВИЗУАЛЬНАЯ ОБРАТНАЯ СВЯЗЬ ===
-    function showFeedback(text, type = 'success') {
-        alert(text);
-    }
-
-    function markAsFavorite(btn, isFavorite) {
         if (isFavorite) {
-            btn.innerHTML = '<svg fill="#ff6b35"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>';
+            // Уже есть — удаляем
+            favorites = favorites.filter(p => !(p.id === item.id && p.section === item.section));
+            markAsFavorite(btn, false);
+            
+            // Обновляем счётчик
+            const el = document.getElementById('favorites-count');
+            const count = parseInt(el.textContent) || 0;
+            if (count > 1) {
+                el.textContent = count - 1;
+            } else {
+                el.classList.remove('show');
+            }
         } else {
-            btn.innerHTML = '<svg><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>';
+            // Нет — добавляем
+            favorites.push(item);
+            markAsFavorite(btn, true);
+            
+            // Обновляем счётчик
+            const el = document.getElementById('favorites-count');
+            const count = parseInt(el.textContent) || 0;
+            el.textContent = count + 1;
+            el.classList.add('show');
         }
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+        updateHeaderCounters();
     }
+}
 
+// === ВИЗУАЛЬНАЯ ОБРАТНАЯ СВЯЗЬ ===
+function markAsFavorite(btn, isFavorite) {
+    if (isFavorite) {
+        btn.innerHTML = '<svg fill="#ff6b35"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>';
+    } else {
+        btn.innerHTML = '<svg fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>';
+    }
+}
     // === ПЕРЕНОС ДАННЫХ ПРИ ВХОДЕ ===
     function migrateGuestDataIfNeeded() {
         if (!isUserLoggedIn()) return;
@@ -332,7 +378,7 @@ function handleAddToCart(item, selectedSize) {
             const sizeBtn = card.querySelector('.size-btn.selected');
             const selectedSize = sizeBtn ? sizeBtn.dataset.size : null;
             
-            handleAddToCart(item, selectedSize);
+            handleAddToCart(item, selectedSize, buyBtn);
         });
 
         // === КНОПКА "Избранное" ===

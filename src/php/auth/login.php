@@ -59,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/auth.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/icon32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/icon16x16.png">
 </head>
