@@ -19,18 +19,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['password'] = "Пароль обязателен.";
     }
 
-    // Если нет ошибок валидации — проверяем учётные данные
+    // Если нет ошибок — проверяем учётные данные
     if (empty($errors)) {
-        $stmt = $mysqli->prepare("SELECT id, username, password FROM users WHERE email = ?");
+        // Запрашиваем id, username, password И role
+        $stmt = $mysqli->prepare("SELECT id, username, password, role FROM users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($user = $result->fetch_assoc()) {
             if (password_verify($password, $user['password'])) {
+                // Сохраняем данные в сессию
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
-                header("Location: ../../../index.php");
+                $_SESSION['user_role'] = $user['role']; // ← КЛЮЧЕВАЯ СТРОКА
+
+                // Редирект в зависимости от роли
+                if ($user['role'] === 'admin') {
+                    header("Location: ../../../admin/manage-products.php");
+                } else {
+                    header("Location: ../../../index.php");
+                }
                 exit;
             } else {
                 $errors['password'] = "Неверный email или пароль.";
