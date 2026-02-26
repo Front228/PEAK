@@ -1,6 +1,6 @@
 <?php
-$host = 'localhost';
-// $host = '127.0.1.29';
+// $host = 'localhost';
+$host = '127.0.1.29';
 $dbname = 'peak_performance';
 $username = 'root';
 $password = '';    

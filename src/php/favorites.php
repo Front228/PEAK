@@ -38,22 +38,20 @@
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <li class="navbar_item"><a href="/block/men.php">акции</a></li>
-                    <li class="navbar_item"><a href="/block/women.php">женское</a></li>
-                    <li class="navbar_item"><a href="/block/men.php">мужское</a></li>
-                    <li class="navbar_item"><a href="/block/kids.php">детское</a></li>
-                    <li class="navbar_item"><a href="/block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_item"><a href="../../block/men.php">акции</a></li>
+                    <li class="navbar_item"><a href="../../block/women.php">женское</a></li>
+                    <li class="navbar_item"><a href="../../block/men.php">мужское</a></li>
+                    <li class="navbar_item"><a href="../../block/kids.php">детское</a></li>
+                    <li class="navbar_item"><a href="../../block/equipment.php">аксессуары</a></li>
+
+                    <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                        <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
+                    <?php endif; ?>
                 </ul>
                 </nav>
-                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                    <nav class="navbar admin-panel">
-                        <ul class="navbar_list">
-                        <li class="navbar_item"><a href="../../admin/manage-products.php">Товары</a></li>
-                        <li class="navbar_item"><a href="../../admin/add-product.php">Добавить товар</a></li>
-                        <li class="navbar_item"><a href="../../admin/orders.php">Трекер заказов</a></li>
-                        </ul>
-                    </nav>
-                <?php endif; ?>
+
                 <div class="register">
                     <a href="favorites.php" class="icon-wrapper">
                         <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
@@ -75,11 +73,11 @@
                 </div>
                 <div class="mobile">
                     <div class="mobile-register">
-                        <a href="/src/php/favorites.php" class="icon-wrapper">
+                        <a href="./favorites.php" class="icon-wrapper">
                             <img src="/public/icon/favourite.svg" alt="Избраное" class="favicon">
                             <span class="badge" id="favorites-count"></span>
                         </a>
-                        <a href="/src/php/cart.php" class="icon-wrapper">
+                        <a href="./cart.php" class="icon-wrapper">
                             <img src="/public/icon/shopping-cart.svg" alt="Корзина" class="shopping_cart">
                             <span class="badge" id="cart-count"></span>
                         </a>
@@ -99,26 +97,26 @@
                 <nav class="nav_mobile">
                     <div class="closeMenu"><img src="/public/icon/closeMenu.png" alt="close" class="close-menu"></div>
                     <div class="mobileLogo">
-                    <a href="index.html"><img src="/public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
+                    <a href="../../index.php"><img src="/public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
-                    <li class="navbar_mobile-item"><a href="/block/men.php">акции</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/women.php">женское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/men.php">мужское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/kids.php">детское</a></li>
-                    <li class="navbar_mobile-item"><a href="/block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/men.php">акции</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/women.php">женское</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/men.php">мужское</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/kids.php">детское</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/equipment.php">аксессуары</a></li>
                     
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                        <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
-                        <li class="navbar_mobile-item"><a href="admin/add-product.php">Добавить товар</a></li>
-                        <li class="navbar_mobile-item"><a href="admin/orders.php">Трекер заказов</a></li>
+                        <li class="navbar_mobile-item"><a href="../../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_mobile-item"><a href="../../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_mobile-item"><a href="../../admin/orders.php">Трекер заказов</a></li>
                     <?php endif; ?>
                     </ul>
                 </nav>
                 </div>
             </div>
         </header>
-        <section style="width:100%; height:100vh;">
+        <section style="width:100%; height:100vh;    overflow-y: scroll;scrollbar-width: none; ">
             <div class="favorites-container">
                 <h1>Избранное</h1>
                 <div id="favorites-list"></div>

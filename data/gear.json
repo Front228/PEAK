@@ -6,10 +6,10 @@
         "brand": "Arcteryx",
         "price": 25000,
         "images": [
-            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-065.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-165.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp"
+            "../..\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-065.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-165.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-bora-65-tatsu-265.webp"
         ],
         "category": "рюкзак",
         "size": "N\/A",
@@ -25,10 +25,10 @@
         "brand": "Arcteryx",
         "price": 15990,
         "images": [
-            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-065.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-165.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-265.webp",
-            "\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-365.webp"
+            "../..\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-065.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-165.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-265.webp",
+            "../..\/public\/image\/product\/ryukzak-arcteryx-rush-sk-42-black-365.webp"
         ],
         "category": "рюкзак",
         "size": "N\/A",
@@ -44,8 +44,8 @@
         "brand": "Therm-a-Rest",
         "price": 18990,
         "images": [
-            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-065.webp",
-            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-165.webp"
+            "../..\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-065.webp",
+            "../..\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-0f-regular-balsam-165.webp"
         ],
         "category": "Спальные мешки",
         "size": "N\/A",
@@ -61,8 +61,8 @@
         "brand": "Therm-a-Rest",
         "price": 15990,
         "images": [
-            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-065.webp",
-            "\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-165.webp"
+            "../..\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-065.webp",
+            "../..\/public\/image\/product\/spalnyj-meshok-therm-a-rest-questar-32f-regular-balsam-165.webp"
         ],
         "category": "Спальные мешки",
         "size": "N\/A",
@@ -78,7 +78,7 @@
         "brand": "fischer",
         "price": 79999,
         "images": [
-            "\/public\/image\/product\/1750cfdd_3ea4_11ef_a815_002590ad6739_15e59c6a_a0f8_11ef_aaaa_002590ad6739.jpg"
+            "../..\/public\/image\/product\/1750cfdd_3ea4_11ef_a815_002590ad6739_15e59c6a_a0f8_11ef_aaaa_002590ad6739.jpg"
         ],
         "category": "лыжи",
         "size": "N\/A",
@@ -94,7 +94,7 @@
         "brand": "HEAD",
         "price": 84599,
         "images": [
-            "\/public\/image\/product\/48297219_4d03_11f0_a2f0_002590ad6739_baf9b0d8_4d03_11f0_a2f0_002590ad6739.jpg"
+            "../..\/public\/image\/product\/48297219_4d03_11f0_a2f0_002590ad6739_baf9b0d8_4d03_11f0_a2f0_002590ad6739.jpg"
         ],
         "category": "лыжи",
         "size": "N\/A",
@@ -110,7 +110,7 @@
         "brand": "HEAD",
         "price": 21000,
         "images": [
-            "\/public\/image\/product\/7267f8ce_5029_11f0_ad5b_002590ad6739_7c083af1_502a_11f0_ad5b_002590ad6739.jpg"
+            "../..\/public\/image\/product\/7267f8ce_5029_11f0_ad5b_002590ad6739_7c083af1_502a_11f0_ad5b_002590ad6739.jpg"
         ],
         "category": "лыжи",
         "size": "N\/A",
@@ -126,9 +126,9 @@
         "brand": "Nidecker",
         "price": 54000,
         "images": [
-            "\/public\/image\/product\/img11199_10964.jpg",
-            "\/public\/image\/product\/img11199_70513.jpg",
-            "\/public\/image\/product\/img11199_93906.jpg"
+            "../..\/public\/image\/product\/img11199_10964.jpg",
+            "../..\/public\/image\/product\/img11199_70513.jpg",
+            "../..\/public\/image\/product\/img11199_93906.jpg"
         ],
         "category": "сноуборд",
         "size": "N\/A",
@@ -144,9 +144,9 @@
         "brand": "Jones",
         "price": 74000,
         "images": [
-            "\/public\/image\/product\/img10471_14826.jpg",
-            "\/public\/image\/product\/img10471_40955.jpg",
-            "\/public\/image\/product\/img10471_85013.jpg"
+            "../..\/public\/image\/product\/img10471_14826.jpg",
+            "../..\/public\/image\/product\/img10471_40955.jpg",
+            "../..\/public\/image\/product\/img10471_85013.jpg"
         ],
         "category": "сноуборд",
         "size": "N\/A",
@@ -162,10 +162,10 @@
         "brand": "Alpina",
         "price": 9990,
         "images": [
-            "\/public\/image\/product\/img8154_11319.jpg",
-            "\/public\/image\/product\/img8154_34599.jpg",
-            "\/public\/image\/product\/img8154_62663.jpg",
-            "\/public\/image\/product\/img8154_95383.jpg"
+            "../..\/public\/image\/product\/img8154_11319.jpg",
+            "../..\/public\/image\/product\/img8154_34599.jpg",
+            "../..\/public\/image\/product\/img8154_62663.jpg",
+            "../..\/public\/image\/product\/img8154_95383.jpg"
         ],
         "category": "шлема",
         "size": "N\/A",
@@ -181,8 +181,8 @@
         "brand": "Prime",
         "price": 1590,
         "images": [
-            "\/public\/image\/product\/img7447_46825.png",
-            "\/public\/image\/product\/img7447_25862.png"
+            "../..\/public\/image\/product\/img7447_46825.png",
+            "../..\/public\/image\/product\/img7447_25862.png"
         ],
         "category": "шлема",
         "size": "N\/A",
@@ -198,9 +198,9 @@
         "brand": "ProSurf",
         "price": 15990,
         "images": [
-            "\/public\/image\/product\/img10578_12404.jpg",
-            "\/public\/image\/product\/img10578_42711.jpg",
-            "\/public\/image\/product\/img10578_70855.jpg"
+            "../..\/public\/image\/product\/img10578_12404.jpg",
+            "../..\/public\/image\/product\/img10578_42711.jpg",
+            "../..\/public\/image\/product\/img10578_70855.jpg"
         ],
         "category": "шлема",
         "size": "N\/A",
@@ -216,9 +216,9 @@
         "brand": "Россия",
         "price": 1200,
         "images": [
-            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-065.webp",
-            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-165.webp",
-            "\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-265.webp"
+            "../..\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-065.webp",
+            "../..\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-165.webp",
+            "../..\/public\/image\/product\/kovrik-turisticheskij-skladnoj-garmoshka-kamuflyazh-korichnevyj-265.webp"
         ],
         "category": "Туристические коврики",
         "size": "N\/A",
@@ -234,10 +234,10 @@
         "brand": "Salomon",
         "price": 12000,
         "images": [
-            "\/public\/image\/product\/img10882_14515.png",
-            "\/public\/image\/product\/img10882_54334.png",
-            "\/public\/image\/product\/img10882_74886.png",
-            "\/public\/image\/product\/img10882_79439.jpg"
+            "../..\/public\/image\/product\/img10882_14515.png",
+            "../..\/public\/image\/product\/img10882_54334.png",
+            "../..\/public\/image\/product\/img10882_74886.png",
+            "../..\/public\/image\/product\/img10882_79439.jpg"
         ],
         "category": "шлема",
         "size": "N\/A",
@@ -253,9 +253,9 @@
         "brand": "Alpina",
         "price": 9000,
         "images": [
-            "\/public\/image\/product\/img11256_48848.jpg",
-            "\/public\/image\/product\/img11256_51812.jpg",
-            "\/public\/image\/product\/img11256_72446.jpg"
+            "../..\/public\/image\/product\/img11256_48848.jpg",
+            "../..\/public\/image\/product\/img11256_51812.jpg",
+            "../..\/public\/image\/product\/img11256_72446.jpg"
         ],
         "category": "маски",
         "size": "N\/A",
@@ -271,8 +271,8 @@
         "brand": "Scott",
         "price": 12000,
         "images": [
-            "\/public\/image\/product\/img11413_43414.jpg",
-            "\/public\/image\/product\/img11413_57754.jpg"
+            "../..\/public\/image\/product\/img11413_43414.jpg",
+            "../..\/public\/image\/product\/img11413_57754.jpg"
         ],
         "category": "маски",
         "size": "N\/A",

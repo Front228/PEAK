@@ -6,10 +6,10 @@
         "brand": "Bask",
         "price": 14990,
         "images": [
-            "\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-065.webp",
-            "\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-165.webp",
-            "\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-265.webp",
-            "\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-365.webp"
+            "../..\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-065.webp",
+            "../..\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-165.webp",
+            "../..\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-265.webp",
+            "../..\/public\/image\/product\/bryuki-zhenskie-bask-trek-lady-v2-black-grey-365.webp"
         ],
         "category": "штаны",
         "size": "S, M, L, XL",
@@ -25,10 +25,10 @@
         "brand": "Bask",
         "price": 10500,
         "images": [
-            "\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-065.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-165.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-265.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-365.webp"
+            "../..\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-065.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-165.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-265.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-bask-jump-lj-light-grey-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "XS, S, M, L",
@@ -44,10 +44,10 @@
         "brand": "Sivera",
         "price": 26600,
         "images": [
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-065.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-165.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-265.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-365.webp"
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-065.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-165.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-265.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-barmica-summit-az-cherry-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "XS, S, M",
@@ -63,10 +63,10 @@
         "brand": "Alaskan",
         "price": 6970,
         "images": [
-            "\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-065.webp",
-            "\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-165.webp",
-            "\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-265.webp",
-            "\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-365.webp"
+            "../..\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-065.webp",
+            "../..\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-165.webp",
+            "../..\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-265.webp",
+            "../..\/public\/image\/product\/kostyum-alaskan-velona-yellow-grey-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "S, M, L",
@@ -82,10 +82,10 @@
         "brand": "Finntrail",
         "price": 17990,
         "images": [
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-065.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-165.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-265.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-365.webp"
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-065.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-165.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-265.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-atlas-w-3461-graphite-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "XS, S, M, L",
@@ -101,10 +101,10 @@
         "brand": "Finntrail",
         "price": 15000,
         "images": [
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-065.webp",
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-165.webp",
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-265.webp",
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-365.webp"
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-065.webp",
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-165.webp",
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-265.webp",
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-rosy-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "S, M, L",
@@ -120,8 +120,8 @@
         "brand": "Finntrail",
         "price": 15000,
         "images": [
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-lightblue-065.webp",
-            "\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-lightblue-165.webp"
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-lightblue-065.webp",
+            "../..\/public\/image\/product\/kombinezon-zhenskij-finntrail-rachel-3853-lightblue-165.webp"
         ],
         "category": "верхняя одежда",
         "size": "XS, S, M",
@@ -137,7 +137,7 @@
         "brand": "Bask",
         "price": 1990,
         "images": [
-            "\/public\/image\/product\/pulover-zhenskij-bask-grid-lady-jkt-v2-light-violet-065.webp"
+            "../..\/public\/image\/product\/pulover-zhenskij-bask-grid-lady-jkt-v2-light-violet-065.webp"
         ],
         "category": "термо бельё",
         "size": "XS, S, M, L, XL",
@@ -153,10 +153,10 @@
         "brand": "Finntrail",
         "price": 16000,
         "images": [
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-065.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-165.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-265.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-365.webp"
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-065.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-165.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-265.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-finntrail-rachel-6455-lightblue-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "XS, S, M, L",
@@ -172,8 +172,8 @@
         "brand": "Finntrail",
         "price": 2500,
         "images": [
-            "\/public\/image\/product\/termobel-yo-zhenskoe-finntrail-subzero-w-6405-n-black-065.webp",
-            "\/public\/image\/product\/termobel-yo-zhenskoe-finntrail-subzero-w-6405-n-black-165.webp"
+            "../..\/public\/image\/product\/termobel-yo-zhenskoe-finntrail-subzero-w-6405-n-black-065.webp",
+            "../..\/public\/image\/product\/termobel-yo-zhenskoe-finntrail-subzero-w-6405-n-black-165.webp"
         ],
         "category": "термо бельё",
         "size": "XS, S, M, L, XL, 2XL",
@@ -189,10 +189,10 @@
         "brand": "Sivera",
         "price": 4990,
         "images": [
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-065.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-165.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-265.webp",
-            "\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-365.webp"
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-065.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-165.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-265.webp",
+            "../..\/public\/image\/product\/kurtka-zhenskaya-sivera-otava-shafran-365.webp"
         ],
         "category": "флисовая одежда",
         "size": "S, M, L",
@@ -208,10 +208,10 @@
         "brand": "Salomon",
         "price": 15990,
         "images": [
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-065.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-165.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-265.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-365.webp"
+            "../..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-065.webp",
+            "../..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-165.webp",
+            "../..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-265.webp",
+            "../..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-365.webp"
         ],
         "category": "обувь",
         "size": "N\/A",
@@ -227,10 +227,10 @@
         "brand": "Arcteryx",
         "price": 19900,
         "images": [
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-065.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-165.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-265.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-365.webp"
+            "../..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-065.webp",
+            "../..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-165.webp",
+            "../..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-265.webp",
+            "../..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-365.webp"
         ],
         "category": "обувь",
         "size": "N\/A",

@@ -23,11 +23,15 @@
     margin-left: 1.25rem;
 }
 .navbar {
-    width: 50%;
+    width: 80%;
     height: auto;
     padding-left: 5vw;
-
 }
+@media (max-width:1468px) {
+  .navbar{padding-left:2vw ;}
+}
+
+
 .navbar_list{
     display: flex;
     list-style: none;
@@ -63,6 +67,9 @@
 
 .navbar_item a:hover::after {
   width: 100%;
+}
+@media (max-width:1410px) {
+  .navbar_item a {font-size: 1rem;}
 }
 .register{
     position: absolute;

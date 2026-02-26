@@ -521,6 +521,8 @@
 }
 .favorites-container {
     max-width: 1440px;
+    height: 100vh;
+
     margin: 0 auto;
     padding: 20px;
 }

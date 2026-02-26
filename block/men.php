@@ -65,23 +65,19 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <li class="navbar_item"><a href="/block/men.php">акции</a></li>
-                    <li class="navbar_item"><a href="/block/women.php">женское</a></li>
-                    <li class="navbar_item"><a href="/block/men.php">мужское</a></li>
-                    <li class="navbar_item"><a href="/block/kids.php">детское</a></li>
-                    <li class="navbar_item"><a href="/block/equipment.php">аксессуары</a></li>  
+                    <li class="navbar_item"><a href="men.php">акции</a></li>
+                    <li class="navbar_item"><a href="women.php">женское</a></li>
+                    <li class="navbar_item"><a href="men.php">мужское</a></li>
+                    <li class="navbar_item"><a href="kids.php">детское</a></li>
+                    <li class="navbar_item"><a href="equipment.php">аксессуары</a></li> 
+                    
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                    
-                        
-                    <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
-                    <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
-                    <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
-                    
-                
-            <?php endif; ?>                  
+                        <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
+                    <?php endif; ?>                  
                 </ul>
                 </nav>
-              
                 <div class="register">
                     <a href="../src/php/favorites.php" class="icon-wrapper">
                         <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">

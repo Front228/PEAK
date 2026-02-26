@@ -70,17 +70,14 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     <li class="navbar_item"><a href="kids.php">детское</a></li>
                     <li class="navbar_item"><a href="equipment.php">аксессуары</a></li>
                     
-                </ul>
-                </nav>
-                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                    <nav class="navbar admin-panel">
-                        <ul class="navbar_list">
+                    <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
                         <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
                         <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
-                        </ul>
-                    </nav>
-                <?php endif; ?>
+                    <?php endif; ?>
+                </ul>
+                </nav>
+                
                 <div class="register">
                     <a href="../src/php/favorites.php" class="icon-wrapper">
                         <img src="../public/icon/favourite.svg" alt="Избраное" class="favicon">
@@ -126,7 +123,7 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                 <nav class="nav_mobile">
                     <div class="closeMenu"><img src="../public/icon/closeMenu.png" alt="close" class="close-menu"></div>
                     <div class="mobileLogo">
-                    <a href="index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
+                    <a href="../index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
                     <li class="navbar_mobile-item"><a href="men.php">акции</a></li>
@@ -136,9 +133,9 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     <li class="navbar_mobile-item"><a href="equipment.php">аксессуары</a></li>
                     
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                        <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
-                        <li class="navbar_mobile-item"><a href="admin/add-product.php">Добавить товар</a></li>
-                        <li class="navbar_mobile-item"><a href="admin/orders.php">Трекер заказов</a></li>
+                        <li class="navbar_mobile-item"><a href="../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_mobile-item"><a href="../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_mobile-item"><a href="../admin/orders.php">Трекер заказов</a></li>
                     <?php endif; ?>
                     </ul>
                 </nav>
