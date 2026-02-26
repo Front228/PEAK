@@ -45,9 +45,9 @@
                     <li class="navbar_item"><a href="../../block/equipment.php">аксессуары</a></li>
 
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-                        <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
-                        <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
-                        <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
+                        <li class="navbar_item"><a href="../../admin/manage-products.php">Товары</a></li>
+                        <li class="navbar_item"><a href="../../admin/add-product.php">Добавить товар</a></li>
+                        <li class="navbar_item"><a href="../../admin/orders.php">Трекер заказов</a></li>
                     <?php endif; ?>
                 </ul>
                 </nav>

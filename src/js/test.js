@@ -231,11 +231,12 @@ function markAsFavorite(btn, isFavorite) {
         const favs = JSON.parse(localStorage.getItem('favorites') || '[]');
 
         if (cart.length > 0 || favs.length > 0) {
+            const size = item.selectedSize || (item.size ? item.size.split(',')[0] : 'N/A');
             cart.forEach(item => {
                 fetch('/src/php/handlers/add_to_cart.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: `product_id=${item.id}&section=${encodeURIComponent(item.section)}&quantity=${item.quantity || 1}`
+                    body: `product_id=${item.id}&section=${encodeURIComponent(item.section)}&quantity=${item.quantity || 1}$size=${encodeURIComponent(size)}`
                 });
             });
 
