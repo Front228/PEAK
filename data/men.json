@@ -6,10 +6,10 @@
         "brand": "Mammut",
         "price": 6790,
         "images": [
-            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-065.webp",
-            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-165.webp",
-            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-265.webp",
-            "\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-365.webp"
+            "../public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-065.webp",
+            "..\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-165.webp",
+            "..\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-265.webp",
+            "..\/public\/image\/product\/kurtka-mammut-eigerjoch-pro-in-hooded-jacket-tarn-365.webp"
         ],
         "category": "верхняя одежда",
         "size": "S, M, L, XL",
@@ -25,10 +25,10 @@
         "brand": "Mammut",
         "price": 2990,
         "images": [
-            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-065.webp",
-            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-165.webp",
-            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-265.webp",
-            "\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-365.webp"
+            "..\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-065.webp",
+            "..\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-165.webp",
+            "..\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-265.webp",
+            "..\/public\/image\/product\/kurtka-mammut-convey-tour-hs-hooded-jacket-men-marine-365.webp"
         ],
         "category": "ветровки",
         "size": "S, M, L, XL, 2XL",
@@ -44,10 +44,10 @@
         "brand": "Arcteryx",
         "price": 4700,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-265.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-365.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-265.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-atom-hoody-m-forage-365.webp"
         ],
         "category": "ветровки",
         "size": "S, M, L",
@@ -63,9 +63,9 @@
         "brand": "Arcteryx",
         "price": 18000,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-265.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-thorium-hoody-nightscape-265.webp"
         ],
         "category": "верхняя одежда",
         "size": "S, M, L, 2XL",
@@ -81,10 +81,10 @@
         "brand": "Arcteryx",
         "price": 7690,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-265.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-365.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-265.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-sl-jacket-mens-black-365.webp"
         ],
         "category": "ветровки",
         "size": "L, XL",
@@ -100,10 +100,10 @@
         "brand": "Arcteryx",
         "price": 7130,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-265.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-365.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-265.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-lodestar-365.webp"
         ],
         "category": "ветровки",
         "size": "S, M, L",
@@ -119,10 +119,10 @@
         "brand": "Arcteryx",
         "price": 7130,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-265.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-365.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-265.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-black-sapphire-365.webp"
         ],
         "category": "ветровки",
         "size": "S, M, L, XL",
@@ -138,9 +138,9 @@
         "brand": "The North Face",
         "price": 5290,
         "images": [
-            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-065.webp",
-            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-165.webp",
-            "\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-265.webp"
+            "..\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-065.webp",
+            "..\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-165.webp",
+            "..\/public\/image\/product\/kurtka-the-north-face-aconcagua-3-hoodie-black-265.webp"
         ],
         "category": "верхняя одежда",
         "size": "S, M, L, XL",
@@ -156,10 +156,10 @@
         "brand": "Arcteryx",
         "price": 7100,
         "images": [
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-065.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-165.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-265.webp",
-            "\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-365.webp"
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-065.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-165.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-265.webp",
+            "..\/public\/image\/product\/kurtka-arcteryx-beta-jacket-mens-trail-magic-365.webp"
         ],
         "category": "ветровки",
         "size": "XS, S, M",
@@ -175,8 +175,8 @@
         "brand": "Graff",
         "price": 4950,
         "images": [
-            "\/public\/image\/product\/termobelyo-graff-900-902-black-065.webp",
-            "\/public\/image\/product\/termobelyo-graff-900-902-black-165.webp"
+            "..\/public\/image\/product\/termobelyo-graff-900-902-black-065.webp",
+            "..\/public\/image\/product\/termobelyo-graff-900-902-black-165.webp"
         ],
         "category": "термо бельё",
         "size": "XS, S, M, L, XL, 2XL",
@@ -192,7 +192,7 @@
         "brand": "Graff",
         "price": 4590,
         "images": [
-            "\/public\/image\/product\/termobelyo-graff-900-901-olive-065.webp"
+            "..\/public\/image\/product\/termobelyo-graff-900-901-olive-065.webp"
         ],
         "category": "термо бельё",
         "size": "S, M, L, XL, 2XL",
@@ -208,10 +208,10 @@
         "brand": "Arcteryx",
         "price": 9990,
         "images": [
-            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-065.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-165.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-265.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-365.webp"
+            "..\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-065.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-165.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-265.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-covert-cardigan-men-s-black-heather-ii-365.webp"
         ],
         "category": "флисовая одежда",
         "size": "XS, S, M, L, XL",
@@ -227,10 +227,10 @@
         "brand": "Arcteryx",
         "price": 9950,
         "images": [
-            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-065.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-165.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-265.webp",
-            "\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-365.webp"
+            "..\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-065.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-165.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-265.webp",
+            "..\/public\/image\/product\/dzhemper-arcteryx-kyanite-lt-jacket-mens-revel-365.webp"
         ],
         "category": "флисовая одежда",
         "size": "M, L, XL",
@@ -246,10 +246,10 @@
         "brand": "Arcteryx",
         "price": 5660,
         "images": [
-            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-065.webp",
-            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-165.webp",
-            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-265.webp",
-            "\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-365.webp"
+            "..\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-065.webp",
+            "..\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-165.webp",
+            "..\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-265.webp",
+            "..\/public\/image\/product\/bryuki-arcteryx-beta-pant-men-s-24-black-365.webp"
         ],
         "category": "штаны",
         "size": "S, M, L, XL",
@@ -265,7 +265,7 @@
         "brand": "Simms",
         "price": 6000,
         "images": [
-            "\/public\/image\/product\/bryuki-simms-guide-fishing-pants-camel-065.webp"
+            "..\/public\/image\/product\/bryuki-simms-guide-fishing-pants-camel-065.webp"
         ],
         "category": "штаны",
         "size": "S, M",
@@ -281,8 +281,8 @@
         "brand": "The North Face",
         "price": 2900,
         "images": [
-            "\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-065.webp",
-            "\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-165.webp"
+            "..\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-065.webp",
+            "..\/public\/image\/product\/shapka-the-north-face-logo-box-cuffied-black-165.webp"
         ],
         "category": "шапка",
         "size": "XS, S, M, L, XL, 2XL",
@@ -298,7 +298,7 @@
         "brand": "Costa",
         "price": 1900,
         "images": [
-            "\/public\/image\/product\/ochki-costa-rinconcito-blue-mirror-580g-tiger-shark-065.webp"
+            "..\/public\/image\/product\/ochki-costa-rinconcito-blue-mirror-580g-tiger-shark-065.webp"
         ],
         "category": "очки",
         "size": "N\/A",
@@ -314,10 +314,10 @@
         "brand": "Oakley",
         "price": 13000,
         "images": [
-            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-065.webp",
-            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-165.webp",
-            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-265.webp",
-            "\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-365.webp"
+            "..\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-065.webp",
+            "..\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-165.webp",
+            "..\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-265.webp",
+            "..\/public\/image\/product\/ochki-oakley-heliostat-matte-black-prizm-sapphire-polar-365.webp"
         ],
         "category": "очки",
         "size": "N\/A",
@@ -333,10 +333,10 @@
         "brand": "Oakley",
         "price": 15000,
         "images": [
-            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-065.webp",
-            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-165.webp",
-            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-265.webp",
-            "\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-365.webp"
+            "..\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-065.webp",
+            "..\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-165.webp",
+            "..\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-265.webp",
+            "..\/public\/image\/product\/ochki-oakley-holbrook-s-matte-black-prizm-violet-365.webp"
         ],
         "category": "очки",
         "size": "N\/A",
@@ -352,7 +352,7 @@
         "brand": "Patagonia",
         "price": 5400,
         "images": [
-            "\/public\/image\/product\/shapka-patagonia-better-sweater-beanie-l-grey-065.webp"
+            "..\/public\/image\/product\/shapka-patagonia-better-sweater-beanie-l-grey-065.webp"
         ],
         "category": "шапка",
         "size": "N\/A",
@@ -368,7 +368,7 @@
         "brand": "Arcteryx",
         "price": 5400,
         "images": [
-            "\/public\/image\/product\/shapka-arcteryx-bird-patch-toque-komorebi-065.webp"
+            "..\/public\/image\/product\/shapka-arcteryx-bird-patch-toque-komorebi-065.webp"
         ],
         "category": "шапка",
         "size": "N\/A",
@@ -384,10 +384,10 @@
         "brand": "Salomon",
         "price": 15990,
         "images": [
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-065.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-165.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-265.webp",
-            "\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-365.webp"
+            "..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-065.webp",
+            "..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-165.webp",
+            "..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-265.webp",
+            "..\/public\/image\/product\/botinki-salomon-x-ultra-360-mid-gtx-black-magnet-pewter-365.webp"
         ],
         "category": "обувь",
         "size": "N\/A",
@@ -403,10 +403,10 @@
         "brand": "Arcteryx",
         "price": 19900,
         "images": [
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-065.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-165.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-265.webp",
-            "\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-365.webp"
+            "..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-065.webp",
+            "..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-165.webp",
+            "..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-265.webp",
+            "..\/public\/image\/product\/botinki-arcteryx-kopec-mid-gtx-mens-black-black-365.webp"
         ],
         "category": "обувь",
         "size": "N\/A",
@@ -422,8 +422,8 @@
         "brand": "Arcteryx",
         "price": 7100,
         "images": [
-            "\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-065.webp",
-            "\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-165.webp"
+            "..\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-065.webp",
+            "..\/public\/image\/product\/panama-arcteryx-sinsolo-hat-black-165.webp"
         ],
         "category": "шапка",
         "size": "N\/A",
