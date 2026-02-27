@@ -50,8 +50,8 @@
             <li class="navbar_item"><a href="block/equipment.php">аксессуары</a></li>
             
             <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
-              <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
-              <li class="navbar_item"><a href="../admin/add-product.php">Добавить товар</a></li>
+              <li class="navbar_item"><a href="admin/manage-products.php">Товары</a></li>
+              <li class="navbar_item"><a href="admin/add-product.php">Добавить товар</a></li>
               <li class="navbar_item"><a href="../admin/orders.php">Трекер заказов</a></li>
             <?php endif; ?>
           </ul>
@@ -136,8 +136,8 @@
           <p class="description-text">помогут вам получать от жизни максимум удовольствия.</p>
           <div style="display: flex; justify-content: center;
           align-items: center; flex-wrap: wrap; width: 100%;padding: 20px;">
-            <a href="" class="btn-infoMore">Купить сейчас</a>
-            <a href="" class="btn-infoMore">Подробнее</a>
+            <a href="block/men.php" class="btn-infoMore">Купить сейчас</a>
+            <a href="#blockWear" class="btn-infoMore">Подробнее</a>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@
     </div>
   </div>
 </section>
-  <h1 class="Title-brends padding-title">Одежда</h1>
+  <h1 class="Title-brends padding-title" id="blockWear">Одежда</h1>
 <section class="block_grid-section">
   <div class="parent">
     <a href="block/men.php#category=штаны" class="div1 scroll-item" data-aos="fade-up" >
@@ -303,7 +303,7 @@
     <a href="block/men.php#category=Обувь" class="div4 scroll-item" data-aos="fade-up" > 
       <h2 class="title-wear">Обувь</h2>
     </a>
-    <a href="block/equшpment.php#category=Снаряжение" class="div5 scroll-item" data-aos="fade-up" > 
+    <a href="block/equipment.php#category=Снаряжение" class="div5 scroll-item" data-aos="fade-up" > 
       <h2 class="title-wear">Снаряжение</h2>
     </a>
   </div>
@@ -680,16 +680,16 @@
     <div class="video-content">
       <h1 class="video-title">Готовы к приключениям?</h1>
       <p class="video-subtitle">Исследуйте горы, леса и снег с лучшим снаряжением.</p>
-      <a href="#" class="video-btn">Купить сейчас</a>
+      <a href="block/equipment.php" class="video-btn">Купить сейчас</a>
     </div>
 
     <!-- Стрелка пролистывания -->
-    <div class="scroll-down" id="scrollDown">
+    <!-- <div class="scroll-down" id="scrollDown">
       <span>Пролистать</span>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-    </div>
+    </div> -->
   </div>
 
   <!-- Кнопка паузы -->
@@ -704,10 +704,10 @@
       <div class="logo_footer">
         <a href="index.php"><img src="public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="96" height="76"></a>
           <div class="social-networks">
-            <a href=""><img src="public/icon/social networks/x-social.svg" alt="X" width="32" height="32"></a>
-            <a href=""><img src="public/icon/social networks/telegram.svg" alt="Telegram" width="32" height="32" ></a>
-            <a href=""><img src="public/icon/social networks/instagram.svg" alt="instagram" width="32" height="32"></a>
-            <a href=""><img src="public/icon/social networks/VK.svg" alt="VK" width="32" height="32" ></a>
+            <a href="https://x.com"><img src="public/icon/social networks/x-social.svg" alt="X" width="32" height="32"></a>
+            <a href="https://telegram.org"><img src="public/icon/social networks/telegram.svg" alt="Telegram" width="32" height="32" ></a>
+            <a href="https://instagram.com"><img src="public/icon/social networks/instagram.svg" alt="instagram" width="32" height="32"></a>
+            <a href="https://vk.com"><img src="public/icon/social networks/VK.svg" alt="VK" width="32" height="32" ></a>
           </div>
       </div>
       <nav class="footer_nav">

@@ -234,7 +234,7 @@ function renderFavorites(favs) {
     const container = document.getElementById('favorites-list');
 
     if (!favs.length) {
-        container.innerHTML = '<p class="empty-favorites">Нет товаров в избранном</p>';
+        container.innerHTML = '<p class="empty-favorites">Нет товаров в избранном!<a href="../../block/men.php">Перейти к покупкам</a></p>';
         updateHeaderCounters(); // ← Обновляем счётчики
         return;
     }
