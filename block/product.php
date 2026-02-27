@@ -79,7 +79,7 @@ $availableSizes = array_map('trim', explode(',', $product['size']));
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <li class="navbar_item"><a href="./men.php">акции</a></li>
+                    <!-- <li class="navbar_item"><a href="./men.php">акции</a></li> -->
                     <li class="navbar_item"><a href="./women.php">женское</a></li>
                     <li class="navbar_item"><a href="./men.php">мужское</a></li>
                     <li class="navbar_item"><a href="./kids.php">детское</a></li>
@@ -141,7 +141,7 @@ $availableSizes = array_map('trim', explode(',', $product['size']));
                     <a href="index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
-                    <li class="navbar_mobile-item"><a href="men.php">акции</a></li>
+                    <!-- <li class="navbar_mobile-item"><a href="men.php">акции</a></li> -->
                     <li class="navbar_mobile-item"><a href="women.php">женское</a></li>
                     <li class="navbar_mobile-item"><a href="men.php">мужское</a></li>
                     <li class="navbar_mobile-item"><a href="kids.php">детское</a></li>
@@ -225,7 +225,7 @@ $availableSizes = array_map('trim', explode(',', $product['size']));
         <nav class="footer_nav">
             <ul class="footer_list">
             <li class="footer_item catalog">Каталог</li>
-            <li class="footer_item"><a href="men.php">акция</a></li>
+            <!-- <li class="footer_item"><a href="men.php">акция</a></li> -->
             <li class="footer_item"><a href="women.php">женское</a></li>
             <li class="footer_item"><a href="men.php">мужское</a></li>
             <li class="footer_item"><a href="kids.php">детское</a></li>

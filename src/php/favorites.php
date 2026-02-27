@@ -136,11 +136,11 @@
         <nav class="footer_nav">
             <ul class="footer_list">
             <li class="footer_item catalog">Каталог</li>
-            <li class="footer_item"><a href="">акция</a></li>
-            <li class="footer_item"><a href="">женское</a></li>
-            <li class="footer_item"><a href="">мужское</a></li>
-            <li class="footer_item"><a href="">детское</a></li>
-            <li class="footer_item"><a href="">Снаряжение</a></li>
+            <!-- <li class="footer_item"><a href="">акция</a></li> -->
+            <li class="footer_item"><a href="../../block/women.php">женское</a></li>
+            <li class="footer_item"><a href="../../block/men.php">мужское</a></li>
+            <li class="footer_item"><a href="../../block/kids.php">детское</a></li>
+            <li class="footer_item"><a href="../../block/equipment.php">Снаряжение</a></li>
             </ul>
             <ul class="footer_list">
             <li class="footer_item catalog">Правила</li>
