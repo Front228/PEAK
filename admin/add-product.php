@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <li class="navbar_item"><a href="/block/men.php">акции</a></li>
+                    <!-- <li class="navbar_item"><a href="/block/men.php">акции</a></li> -->
                     <li class="navbar_item"><a href="/block/women.php">женское</a></li>
                     <li class="navbar_item"><a href="/block/men.php">мужское</a></li>
                     <li class="navbar_item"><a href="/block/kids.php">детское</a></li>
@@ -217,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a href="index.php"><img src="../public/icon/PEAK WHITE.svg" alt="PEAK PERFORMANCE" width="85" height="60"></a>
                     </div>
                     <ul class="navbar_mibile-list">
-                    <li class="navbar_mobile-item"><a href="/block/men.php">акции</a></li>
+                    <!-- <li class="navbar_mobile-item"><a href="/block/men.php">акции</a></li> -->
                     <li class="navbar_mobile-item"><a href="/block/women.php">женское</a></li>
                     <li class="navbar_mobile-item"><a href="/block/men.php">мужское</a></li>
                     <li class="navbar_mobile-item"><a href="/block/kids.php">детское</a></li>
