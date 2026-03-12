@@ -47,7 +47,7 @@
             <li class="navbar_item"><a href="block/women.php">женское</a></li>
             <li class="navbar_item"><a href="block/men.php">мужское</a></li>
             <li class="navbar_item"><a href="block/kids.php">детское</a></li>
-            <li class="navbar_item"><a href="block/equipment.php">аксессуары</a></li>
+            <li class="navbar_item"><a href="block/equipment.php">снаряжение</a></li>
             
             <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
               <li class="navbar_item"><a href="admin/manage-products.php">Товары</a></li>
@@ -109,7 +109,7 @@
               <li class="navbar_mobile-item"><a href="block/women.php">женское</a></li>
               <li class="navbar_mobile-item"><a href="block/men.php">мужское</a></li>
               <li class="navbar_mobile-item"><a href="block/kids.php">детское</a></li>
-              <li class="navbar_mobile-item"><a href="block/qeuipment.php">аксессуары</a></li>
+              <li class="navbar_mobile-item"><a href="block/qeuipment.php">снаряжение</a></li>
               
               <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                 <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
@@ -144,7 +144,6 @@
     </section>
 
     <section class="brands-slider">
-  <!-- <h1 class="Title-brends">Бренды</h1> -->
   
   <!-- Обёртка для скрытия лишнего -->
   <div class="brands-slider__wrapper">

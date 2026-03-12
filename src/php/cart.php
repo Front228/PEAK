@@ -41,7 +41,7 @@
                     <li class="navbar_item"><a href="../../block/women.php">женское</a></li>
                     <li class="navbar_item"><a href="../../block/men.php">мужское</a></li>
                     <li class="navbar_item"><a href="../../block/kids.php">детское</a></li>
-                    <li class="navbar_item"><a href="../../block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_item"><a href="../../block/equipment.php">снаряжение</a></li>
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="navbar_item"><a href="../../admin/manage-products.php">Товары</a></li>
                         <li class="navbar_item"><a href="../../admin/add-product.php">Добавить товар</a></li>
@@ -102,7 +102,7 @@
                     <li class="navbar_mobile-item"><a href="../../block/women.php">женское</a></li>
                     <li class="navbar_mobile-item"><a href="../../block/men.php">мужское</a></li>
                     <li class="navbar_mobile-item"><a href="../../block/kids.php">детское</a></li>
-                    <li class="navbar_mobile-item"><a href="../../block/equipment.php">аксессуары</a></li>
+                    <li class="navbar_mobile-item"><a href="../../block/equipment.php">снаряжение</a></li>
                     
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="navbar_mobile-item"><a href="../../admin/manage-products.php">Товары</a></li>

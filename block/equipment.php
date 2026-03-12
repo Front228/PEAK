@@ -69,7 +69,7 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     <li class="navbar_item"><a href="women.php">женское</a></li>
                     <li class="navbar_item"><a href="men.php">мужское</a></li>
                     <li class="navbar_item"><a href="kids.php">детское</a></li>
-                    <li class="navbar_item"><a href="equipment.php">аксессуары</a></li>
+                    <li class="navbar_item"><a href="equipment.php">снаряжение</a></li>
                     
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="navbar_item"><a href="../admin/manage-products.php">Товары</a></li>
@@ -131,7 +131,7 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
                     <li class="navbar_mobile-item"><a href="women.php">женское</a></li>
                     <li class="navbar_mobile-item"><a href="men.php">мужское</a></li>
                     <li class="navbar_mobile-item"><a href="kids.php">детское</a></li>
-                    <li class="navbar_mobile-item"><a href="equipment.php">аксессуары</a></li>
+                    <li class="navbar_mobile-item"><a href="equipment.php">снаряжение</a></li>
                     
                     <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="navbar_mobile-item"><a href="admin/manage-products.php">Товары</a></li>
