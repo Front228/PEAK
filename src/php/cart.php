@@ -393,13 +393,13 @@ function renderCart(cart) {
 
     // Обработчики
     document.querySelectorAll('.remove-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const id = this.dataset.id;
-            const section = this.dataset.section;
-            const size = this.dataset.size;
-            removeFromCart(id, section, size);
-        });
+    btn.addEventListener('click', function() {
+        const id = this.dataset.id;
+        const section = this.dataset.section;
+        const size = this.dataset.size; // ← уже есть!
+        removeFromCart(id, section, size); // ← передаём size
     });
+});
 
     document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
         btn.addEventListener('click', function() {
