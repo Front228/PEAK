@@ -14,14 +14,17 @@ $section = trim($_POST['section'] ?? '');
 $quantity = max(1, (int)($_POST['quantity'] ?? 1));
 $size = trim($_POST['size'] ?? 'N/A');
 
+// Допустимые категории
 $allowed = ['men', 'women', 'kids', 'gear', 'sales'];
 if (!in_array($section, $allowed)) {
+    error_log("Неверная категория: '$section'");
     echo json_encode(['error' => 'Неверная категория']);
     exit;
 }
 
 $filepath = $_SERVER['DOCUMENT_ROOT'] . "/data/{$section}.json";
 if (!file_exists($filepath)) {
+    error_log("Файл не найден: $filepath");
     echo json_encode(['error' => 'Категория не найдена']);
     exit;
 }
@@ -45,7 +48,7 @@ if (!$found) {
     exit;
 }
 
-// === ИСПРАВЛЕНО: 5 параметров + проверка выполнения ===
+// Сохраняем в БД
 $stmt = $mysqli->prepare("
     INSERT INTO cart (user_id, product_id, section, quantity, size)
     VALUES (?, ?, ?, ?, ?)

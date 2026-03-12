@@ -37,7 +37,7 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
         <link rel="stylesheet" href="../src/css/media.css">
         <link rel="stylesheet" href="../src/css/pageCatalog.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script src="../js/URL_filter.js"></script>
+        <script src="../src/js/URL_filter.js"></script>
     </head>
     <body>
         <header class="main-header" id="upPage">
@@ -314,6 +314,7 @@ $initialProducts = array_merge($mainProducts, $salesProducts);
             }
         });
     </script>
+    <!-- <script src="../src/js/URL_filter.js"></script> -->
     <script src="../src/js/test.js"></script>
     <script src="../src/js/count-wrapper.js"></script>
     <script src="../src/js/app.js" type="module"></script>

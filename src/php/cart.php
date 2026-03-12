@@ -38,7 +38,6 @@
                 </div>
                 <nav class="navbar">
                 <ul class="navbar_list">
-                    <!-- <li class="navbar_item"><a href="../../block/men.php">акции</a></li> -->
                     <li class="navbar_item"><a href="../../block/women.php">женское</a></li>
                     <li class="navbar_item"><a href="../../block/men.php">мужское</a></li>
                     <li class="navbar_item"><a href="../../block/kids.php">детское</a></li>
@@ -230,248 +229,263 @@
 </footer>
 
 <script>
-    function isUserLoggedIn() {
-        return document.querySelector('.logout_image') !== null;
-    }
+function isUserLoggedIn() {
+    return document.querySelector('.logout_image') !== null;
+}
 
-    // === ФУНКЦИЯ ОБНОВЛЕНИЯ СЧЁТЧИКОВ ===
-    function updateHeaderCounters() {
-        const cartEl = document.getElementById('cart-count');
-        const favEl = document.getElementById('favorites-count');
-        if (!cartEl || !favEl) return;
+// === ФУНКЦИЯ ОБНОВЛЕНИЯ СЧЁТЧИКОВ ===
+function updateHeaderCounters() {
+    const cartEl = document.getElementById('cart-count');
+    const favEl = document.getElementById('favorites-count');
+    if (!cartEl || !favEl) return;
 
-        const isLogged = isUserLoggedIn();
+    const isLogged = isUserLoggedIn();
 
-        if (isLogged) {
-            Promise.all([
-                fetch('/src/php/handlers/get_cart_count.php').then(res => res.json()),
-                fetch('/src/php/handlers/get_favorites_count.php').then(res => res.json())
-            ]).then(([cartData, favData]) => {
-                if (cartData.count > 0) {
-                    cartEl.textContent = cartData.count;
-                    cartEl.classList.add('show');
-                } else {
-                    cartEl.classList.remove('show');
-                }
-                if (favData.count > 0) {
-                    favEl.textContent = favData.count;
-                    favEl.classList.add('show');
-                } else {
-                    favEl.classList.remove('show');
-                }
-            }).catch(err => {
-                console.error('Ошибка загрузки счётчиков:', err);
-            });
-        } else {
-            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
-            const favs = JSON.parse(localStorage.getItem('favorites') || '[]');
-
-            if (cart.length > 0) {
-                cartEl.textContent = cart.length;
+    if (isLogged) {
+        Promise.all([
+            fetch('/src/php/handlers/get_cart_count.php').then(res => res.json()),
+            fetch('/src/php/handlers/get_favorites_count.php').then(res => res.json())
+        ]).then(([cartData, favData]) => {
+            if (cartData.count > 0) {
+                cartEl.textContent = cartData.count;
                 cartEl.classList.add('show');
             } else {
                 cartEl.classList.remove('show');
             }
-
-            if (favs.length > 0) {
-                favEl.textContent = favs.length;
+            if (favData.count > 0) {
+                favEl.textContent = favData.count;
                 favEl.classList.add('show');
             } else {
                 favEl.classList.remove('show');
             }
+        }).catch(err => {
+            console.error('Ошибка загрузки счётчиков:', err);
+        });
+    } else {
+        const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        const favs = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+        if (cart.length > 0) {
+            cartEl.textContent = cart.length;
+            cartEl.classList.add('show');
+        } else {
+            cartEl.classList.remove('show');
+        }
+
+        if (favs.length > 0) {
+            favEl.textContent = favs.length;
+            favEl.classList.add('show');
+        } else {
+            favEl.classList.remove('show');
         }
     }
+}
 
-    // === ФУНКЦИЯ РАСЧЁТА КОРЗИНЫ ===
-    function calculateCartTotal(cart) {
-        if (!cart || cart.length === 0) {
-            // Пустая корзина
-            document.querySelector('.basket__js-count').textContent = '0';
-            document.querySelector('.basket__all-price').textContent = '0 ₽';
-            document.querySelector('.sale-price').textContent = '0 ₽';
-            document.querySelector('.delivery-price').textContent = 'Бесплатно';
-            document.querySelector('.basket__bottom-value').textContent = '0 ₽';
-            return;
-        }
+// === ФУНКЦИЯ РАСЧЁТА КОРЗИНЫ ===
+function calculateCartTotal(cart) {
+    if (!cart || cart.length === 0) {
+        document.querySelector('.basket__js-count').textContent = '0';
+        document.querySelector('.basket__all-price').textContent = '0 ₽';
+        document.querySelector('.sale-price').textContent = '0 ₽';
+        document.querySelector('.delivery-price').textContent = 'Бесплатно';
+        document.querySelector('.basket__bottom-value').textContent = '0 ₽';
+        return;
+    }
 
-        // Общая сумма и количество
-        let total = 0;
-        let totalCount = 0;
-        cart.forEach(item => {
-            const price = item.price || 0;
-            const quantity = item.quantity || 1;
-            total += price * quantity;
-            totalCount += quantity;
-        });
+    let total = 0;
+    let totalCount = 0;
+    cart.forEach(item => {
+        const price = item.price || 0;
+        const quantity = item.quantity || 1;
+        total += price * quantity;
+        totalCount += quantity;
+    });
 
-        // Скидка 10%
-        const discount = total * 0.1;
-        // Доставка: бесплатно от 5000 ₽
-        const shipping = total >= 5000 ? 0 : 300;
-        const finalTotal = total - discount + shipping;
+    const discount = total * 0.1;
+    const shipping = total >= 5000 ? 0 : 300;
+    const finalTotal = total - discount + shipping;
 
-        // Обновляем интерфейс
-        document.querySelector('.basket__js-count').textContent = totalCount;
-        document.querySelector('.basket__all-price').textContent = `${total.toLocaleString()} ₽`;
-        document.querySelector('.sale-price').textContent = `${discount.toLocaleString()} ₽`;
-        document.querySelector('.delivery-price').textContent = 
-            shipping > 0 ? `${shipping.toLocaleString()} ₽` : 'Бесплатно';
-        document.querySelector('.basket__bottom-value').textContent = `${Math.round(finalTotal).toLocaleString()} ₽`;
-        
-        function getGoodsText(count) {
+    // Грамматика
+    function getGoodsText(count) {
         if (count === 0) return 'товаров';
         const lastDigit = count % 10;
         const lastTwoDigits = count % 100;
-        
-        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
-            return 'товаров';
-        }
-        if (lastDigit === 1) {
-            return 'товар';
-        }
-        if (lastDigit >= 2 && lastDigit <= 4) {
-            return 'товара';
-        }
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) return 'товаров';
+        if (lastDigit === 1) return 'товар';
+        if (lastDigit >= 2 && lastDigit <= 4) return 'товара';
         return 'товаров';
     }
 
-    // Обновляем интерфейс
-    const countText = getGoodsText(totalCount);
+    document.querySelector('.basket__js-count').textContent = totalCount;
     document.querySelector('.basket__number').innerHTML = 
-        `<span class="basket__js-count">${totalCount}</span> ${countText}`;
-    
+        `<span class="basket__js-count">${totalCount}</span> ${getGoodsText(totalCount)}`;
     document.querySelector('.basket__all-price').textContent = `${total.toLocaleString()} ₽`;
     document.querySelector('.sale-price').textContent = `${discount.toLocaleString()} ₽`;
     document.querySelector('.delivery-price').textContent = 
         shipping > 0 ? `${shipping.toLocaleString()} ₽` : 'Бесплатно';
     document.querySelector('.basket__bottom-value').textContent = `${Math.round(finalTotal).toLocaleString()} ₽`;
 }
-    
 
-    // Загрузка корзины
-    function loadCart() {
-        const container = document.getElementById('cart-items');
+// Загрузка корзины
+function loadCart() {
+    const container = document.getElementById('cart-items');
 
-        if (isUserLoggedIn()) {
-            fetch('/src/php/handlers/get_cart.php')
-                .then(res => res.json())
-                .then(renderCart);
-        } else {
-            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
-            renderCart(cart);
-        }
+    if (isUserLoggedIn()) {
+        fetch('/src/php/handlers/get_cart.php')
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return res.json();
+            })
+            .then(renderCart)
+            .catch(err => {
+                console.error('Ошибка загрузки корзины:', err);
+                container.innerHTML = '<p class="empty-cart">Ошибка загрузки корзины</p>';
+            });
+    } else {
+        const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        renderCart(cart);
+    }
+}
+
+// Отображение корзины
+function renderCart(cart) {
+    const container = document.getElementById('cart-items');
+
+    if (!cart.length) {
+        container.innerHTML = '<p class="empty-cart">Ваша корзина пуста<br><a href="../../block/men.php" class="go-directory">Перейти к покупкам</a></p>';
+        updateHeaderCounters();
+        calculateCartTotal([]);
+        return;
     }
 
-    // Отображение корзины
-    function renderCart(cart) {
-        const container = document.getElementById('cart-items');
-
-        if (!cart.length) {
-            container.innerHTML = '<p class="empty-cart">Ваша корзина пуста<br><a href="../../block/men.php" class="go-directory">Перейти к покупкам</a></p>';
-            updateHeaderCounters();
-            calculateCartTotal([]); // ← обновляем расчёт
-            return;
-        }
-
-        container.innerHTML = cart.map(item => {
-            const price = item.price * (item.quantity || 1);
-            return `
-                <div class="cart-item">
-                    <img src="${item.images[0]}" alt="${item.title}">
-                    <div class="item-info-cart">
+    container.innerHTML = cart.map(item => {
+        const price = item.price * (item.quantity || 1);
+        // Защита от undefined
+        const size = item.selectedSize || item.size || 'N/A';
+        const article = item.article || 'N/A';
+        return `
+            <div class="cart-item">
+                <img src="${item.images[0] || ''}" alt="${item.title || ''}">
+                <div class="item-info-cart">
                     <div class="item-text-number">
-                            <div class="item-title-cart">${item.title}</div>
-                            <div class="item__brand-cart"> ${item.brand}</div>
-                        </div>
-                        <div class="item-count-cart">
-                            <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
-                                <div class="item-price-cart">${item.price.toLocaleString()} ₽</div>
-                                    <div class="quantity-controls">
-                                        <button class="quantity-btn minus" data-id="${item.id}" data-section="${item.section}">-</button>
-                                        <input type="text" class="quantity-input" value="${item.quantity || 1}" readonly>
-                                        <button class="quantity-btn plus" data-id="${item.id}" data-section="${item.section}">+</button>
-                                    </div>
-                                    <button class="remove-btn" data-id="${item.id}" data-section="${item.section}">Удалить</button>
+                        <div class="item-title-cart">${item.title || ''}</div>
+                        <div class="item__brand-cart">${item.brand || ''}</div>
+                    </div>
+                    <div class="item-count-cart">
+                        <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
+                            <div class="item-price-cart">${item.price ? item.price.toLocaleString() : '0'} ₽</div>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus" data-id="${item.id}" data-section="${item.section}" data-size="${size}">-</button>
+                                <input type="text" class="quantity-input" value="${item.quantity || 1}" readonly>
+                                <button class="quantity-btn plus" data-id="${item.id}" data-section="${item.section}" data-size="${size}">+</button>
                             </div>
-                        </div>
-                        <div class="item2article">
-                            <div class="item__size-cart">Размер: ${item.selectedSize || item.size}</div>
-                            <div class="item-article-cart">Артикул: ${item.article}</div>
-                            
+                            <button class="remove-btn" data-id="${item.id}" data-section="${item.section}" data-size="${size}">Удалить</button>
                         </div>
                     </div>
+                    <div class="item2article">
+                        <div class="item__size-cart">Размер: ${size}</div>
+                        <div class="item-article-cart">Артикул: ${article}</div>
+                    </div>
                 </div>
-            `;
-        }).join('');
+            </div>
+        `;
+    }).join('');
 
-        // Обработчики
-        document.querySelectorAll('.remove-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const id = this.dataset.id;
-                const section = this.dataset.section;
-                removeFromCart(id, section);
-            });
+    // Обработчики
+    document.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.id;
+            const section = this.dataset.section;
+            const size = this.dataset.size;
+            removeFromCart(id, section, size);
         });
+    });
 
-        document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
-            btn.addEventListener('click', function() {
-                changeQuantity(this.dataset.id, this.dataset.section, -1);
-            });
+    document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.id;
+            const section = this.dataset.section;
+            const size = this.dataset.size;
+            changeQuantity(id, section, -1, size);
         });
+    });
 
-        document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
-            btn.addEventListener('click', function() {
-                changeQuantity(this.dataset.id, this.dataset.section, 1);
-            });
+    document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.id;
+            const section = this.dataset.section;
+            const size = this.dataset.size;
+            changeQuantity(id, section, 1, size);
         });
-        
+    });
 
-        // Обновляем счётчики и расчёт
-        updateHeaderCounters();
-        calculateCartTotal(cart); // ← ключевая строка!
-    }
+    updateHeaderCounters();
+    calculateCartTotal(cart);
+}
 
-    // Удаление из корзины
-    function removeFromCart(id, section) {
-        if (isUserLoggedIn()) {
-            fetch('/src/php/handlers/remove_from_cart.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: `product_id=${id}&section=${encodeURIComponent(section)}`
-            }).then(() => {
-                loadCart();
-            });
-        } else {
-            let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-            cart = cart.filter(item => !(item.id == id && item.section === section));
-            localStorage.setItem('cart', JSON.stringify(cart));
+// Удаление из корзины
+function removeFromCart(id, section, size) {
+    if (isUserLoggedIn()) {
+        fetch('/src/php/handlers/remove_from_cart.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `product_id=${id}&section=${encodeURIComponent(section)}&size=${encodeURIComponent(size)}`
+        }).then(() => {
             loadCart();
-        }
-    }
-
-    // Изменение количества (для гостей)
-    function changeQuantity(id, section, delta) {
-        if (isUserLoggedIn()) {
-            alert('Изменение количества для авторизованных пока не реализовано.');
-            return;
-        }
-
+        });
+    } else {
         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        const item = cart.find(item => item.id == id && item.section === section);
+        cart = cart.filter(item => 
+            !(item.id == id && item.section === section && (item.selectedSize || item.size) === size)
+        );
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+}
+
+// Изменение количества
+function changeQuantity(id, section, delta, size) {
+    if (isUserLoggedIn()) {
+        fetch('/src/php/handlers/change_quantity.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `product_id=${id}&section=${encodeURIComponent(section)}&size=${encodeURIComponent(size)}&delta=${delta}`
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                loadCart(); // Перезагружаем корзину
+            } else {
+                alert('Ошибка: ' + (data.error || 'Не удалось изменить количество'));
+            }
+        })
+        .catch(err => {
+            console.error('Ошибка:', err);
+            alert('Сеть недоступна');
+        });
+    } else {
+        let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        const item = cart.find(item => 
+            item.id == id && 
+            item.section === section && 
+            (item.selectedSize || item.size) === size
+        );
+        
         if (item) {
             item.quantity = Math.max(1, (item.quantity || 1) + delta);
             if (item.quantity <= 0) {
-                removeFromCart(id, section);
+                removeFromCart(id, section, size);
                 return;
             }
             localStorage.setItem('cart', JSON.stringify(cart));
             loadCart();
         }
     }
+}
 
-    // Запуск
-    loadCart();
-    updateHeaderCounters();
+// Запуск
+loadCart();
+updateHeaderCounters();
 </script>
     <script src="../js/valideBtn.js"></script>
     <script src="../js/app.js" type="module"></script>
