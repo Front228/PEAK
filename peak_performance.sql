@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: MySQL-8.4
--- Время создания: Фев 25 2026 г., 23:13
+-- Время создания: Мар 20 2026 г., 21:42
 -- Версия сервера: 8.4.6
 -- Версия PHP: 8.4.12
 
@@ -37,6 +37,13 @@ CREATE TABLE `cart` (
   `size` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'N/A'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Дамп данных таблицы `cart`
+--
+
+INSERT INTO `cart` (`id`, `user_id`, `product_id`, `section`, `quantity`, `added_at`, `size`) VALUES
+(273, 5, 1, 'women', 1, '2026-03-12 20:57:55', 'S');
+
 -- --------------------------------------------------------
 
 --
@@ -50,6 +57,14 @@ CREATE TABLE `favorites` (
   `section` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `added_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `favorites`
+--
+
+INSERT INTO `favorites` (`id`, `user_id`, `product_id`, `section`, `added_at`) VALUES
+(192, 5, 3, 'men', '2026-03-12 21:49:20'),
+(193, 5, 4, 'men', '2026-03-12 21:49:20');
 
 -- --------------------------------------------------------
 
@@ -67,6 +82,14 @@ CREATE TABLE `orders` (
   `comment` text COLLATE utf8mb4_unicode_ci,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `surname`, `name`, `phone`, `email`, `comment`, `created_at`) VALUES
+(10, NULL, 'Васькин', 'Павел', '+79284990033', 'killer1233@gmail.com', 'вывы', '2026-02-26 18:19:55'),
+(11, NULL, 'Васькин', 'Павел', '+79284990033', 'killer1233@gmail.com', '', '2026-03-12 10:31:05');
 
 -- --------------------------------------------------------
 
@@ -93,7 +116,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `role`, `phone`, `password`, `created_at`, `reset_token`, `reset_expires`) VALUES
 (1, 'PASHA', 'pasha182006@gmail.com', 'user', '79288844420', '$2y$12$KV5Cva2jh8a93DqouFfBuuGADx2G8jA5zT7cgEf0/rbcjJ.3Sq9RC', '2025-12-09 20:41:26', 'd666c8025b5fa74260d190407ad0598d50bddadde287b50f8413c4ffe30b44a2', '2026-01-28 15:40:43'),
 (4, 'killer123', 'killer123@gmail.com', 'user', '79284990033', '$2y$12$GwfYDk3qxoRzOGi7M9Rv8.WDXF2Bk7gtfP38O5cetjYd9zFstCRTW', '2025-12-11 15:27:51', NULL, NULL),
-(5, 'killer1233', 'killer1233@gmail.com', 'user', '79284990033', '$2y$12$7uQGJXpFZqF0n1DcSCK0Y.7gvBwjP59hIWuNU.ZoB47yVYMCvBQpy', '2025-12-11 15:30:04', NULL, NULL),
+(5, 'killer1233', 'killer1233@gmail.com', 'user', '79284990033', '$2y$12$7uQGJXpFZqF0n1DcSCK0Y.7gvBwjP59hIWuNU.ZoB47yVYMCvBQpy', '2025-12-11 15:30:04', '5faf6c3710994c7f50cd560850958398737a9299dbfaa5189ff8fd156563cba4', '2026-03-13 01:59:12'),
 (12, 'admin', 'admin@peak.local', 'admin', '+79991234567', '$2y$12$Y7mCBzY3EG8Wdo3fyPumku/Mj1iKmSHxNpHR0wxwt42wxMxDf984K', '2026-02-25 11:04:51', NULL, NULL);
 
 --
@@ -105,7 +128,7 @@ INSERT INTO `users` (`id`, `username`, `email`, `role`, `phone`, `password`, `cr
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `unique_cart` (`user_id`,`product_id`,`section`);
+  ADD UNIQUE KEY `unique_cart_item` (`user_id`,`product_id`,`section`,`size`);
 
 --
 -- Индексы таблицы `favorites`
@@ -118,7 +141,8 @@ ALTER TABLE `favorites`
 -- Индексы таблицы `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Индексы таблицы `users`
@@ -136,19 +160,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=274;
 
 --
 -- AUTO_INCREMENT для таблицы `favorites`
 --
 ALTER TABLE `favorites`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
 
 --
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
@@ -171,6 +195,12 @@ ALTER TABLE `cart`
 --
 ALTER TABLE `favorites`
   ADD CONSTRAINT `favorites_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Ограничения внешнего ключа таблицы `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
