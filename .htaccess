@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# 1. Убираем index.php
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# 2. Не трогаем системные папки и файлы
+RewriteCond %{REQUEST_URI} !^/(includes|public|vendor|node_modules|src|data)/ [NC]
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|webp)$ [NC]
+
+# 3. Если файл существует — ничего не делаем
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 4. Сначала проверяем block
+RewriteCond %{DOCUMENT_ROOT}/block/$1.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ block/$1.php [L]
+
+# 5. Потом admin
+RewriteCond %{DOCUMENT_ROOT}/admin/$1.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ admin/$1.php [L]
+
+# 6. И потом корень
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+DirectoryIndex index.php
